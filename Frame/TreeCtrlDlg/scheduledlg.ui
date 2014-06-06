@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ScheduleDlg</class>
+ <widget class="QDialog" name="ScheduleDlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>618</width>
+    <height>455</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>时间表设置</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>6</x>
+     <y>7</y>
+     <width>611</width>
+     <height>411</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="Sunday">
+    <attribute name="title">
+     <string>星期日</string>
+    </attribute>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QTableView" name="viewSunday"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="Monday">
+    <attribute name="title">
+     <string>星期一</string>
+    </attribute>
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="0" column="0">
+      <widget class="QTableView" name="viewMonday"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="Tuesday">
+    <attribute name="title">
+     <string>星期二</string>
+    </attribute>
+    <layout class="QGridLayout" name="gridLayout_3">
+     <item row="0" column="0">
+      <widget class="QTableView" name="viewTuesday"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="Wednesday">
+    <attribute name="title">
+     <string>星期三</string>
+    </attribute>
+    <layout class="QGridLayout" name="gridLayout_4">
+     <item row="0" column="0">
+      <widget class="QTableView" name="viewWednesday"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="Thursday">
+    <attribute name="title">
+     <string>星期四</string>
+    </attribute>
+    <layout class="QGridLayout" name="gridLayout_5">
+     <item row="0" column="0">
+      <widget class="QTableView" name="viewThursday"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="Friday">
+    <attribute name="title">
+     <string>星期五</string>
+    </attribute>
+    <layout class="QGridLayout" name="gridLayout_6">
+     <item row="0" column="0">
+      <widget class="QTableView" name="viewFriday"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="Saturday">
+    <attribute name="title">
+     <string>星期六</string>
+    </attribute>
+    <layout class="QGridLayout" name="gridLayout_7">
+     <item row="0" column="0">
+      <widget class="QTableView" name="viewSaturday"/>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="btn_continue">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>430</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>关闭</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_Add">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>430</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>添加</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_AddMulti">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>430</y>
+     <width>80</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>添加多条</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_Del">
+   <property name="geometry">
+    <rect>
+     <x>89</x>
+     <y>430</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>删除</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

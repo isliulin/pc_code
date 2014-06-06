@@ -1,0 +1,3845 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1098</width>
+    <height>849</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>2</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::NoContextMenu</enum>
+  </property>
+  <property name="windowTitle">
+   <string/>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resourse.qrc">
+    <normaloff>:/standardtool/SamKoon.ico</normaloff>:/standardtool/SamKoon.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonTextUnderIcon</enum>
+  </property>
+  <property name="dockNestingEnabled">
+   <bool>false</bool>
+  </property>
+  <property name="unifiedTitleAndToolBarOnMac">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QWidget" name="m_toolwidgetBasic" native="true">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>10</y>
+      <width>231</width>
+      <height>601</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(8, 45, 105);</string>
+    </property>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>211</width>
+       <height>581</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>基本图形</string>
+     </property>
+     <widget class="QPushButton" name="btn_line">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>34</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::ClickFocus</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resourse.qrc">
+        <normaloff>:/drawtool/images/drawtool/line.ico</normaloff>:/drawtool/images/drawtool/line.ico</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_foldline">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>20</y>
+        <width>34</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::ClickFocus</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resourse.qrc">
+        <normaloff>:/drawtool/images/drawtool/foldline.ico</normaloff>:/drawtool/images/drawtool/foldline.ico</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_linecycle">
+      <property name="geometry">
+       <rect>
+        <x>155</x>
+        <y>20</y>
+        <width>34</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::ClickFocus</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resourse.qrc">
+        <normaloff>:/drawtool/images/drawtool/quxing.ico</normaloff>:/drawtool/images/drawtool/quxing.ico</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_freeline">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>90</y>
+        <width>34</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::ClickFocus</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resourse.qrc">
+        <normaloff>:/drawtool/images/drawtool/freeline.ico</normaloff>:/drawtool/images/drawtool/freeline.ico</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_rect">
+      <property name="geometry">
+       <rect>
+        <x>85</x>
+        <y>90</y>
+        <width>34</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::ClickFocus</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resourse.qrc">
+        <normaloff>:/standardtool/images/standardtool/rect.ico</normaloff>:/standardtool/images/standardtool/rect.ico</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_roundrect">
+      <property name="geometry">
+       <rect>
+        <x>155</x>
+        <y>90</y>
+        <width>34</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::ClickFocus</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resourse.qrc">
+        <normaloff>:/drawtool/images/drawtool/roundrect.ico</normaloff>:/drawtool/images/drawtool/roundrect.ico</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_elipse">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>160</y>
+        <width>34</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::ClickFocus</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resourse.qrc">
+        <normaloff>:/drawtool/images/drawtool/ellpse.ico</normaloff>:/drawtool/images/drawtool/ellpse.ico</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_polygon">
+      <property name="geometry">
+       <rect>
+        <x>85</x>
+        <y>160</y>
+        <width>34</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::ClickFocus</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resourse.qrc">
+        <normaloff>:/standardtool/images/standardtool/polygon.ico</normaloff>:/standardtool/images/standardtool/polygon.ico</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_arc">
+      <property name="geometry">
+       <rect>
+        <x>155</x>
+        <y>160</y>
+        <width>34</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::ClickFocus</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resourse.qrc">
+        <normaloff>:/drawtool/images/drawtool/Arcitem.ico</normaloff>:/drawtool/images/drawtool/Arcitem.ico</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_text">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>230</y>
+        <width>34</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::ClickFocus</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resourse.qrc">
+        <normaloff>:/drawtool/images/drawtool/text.ico</normaloff>:/drawtool/images/drawtool/text.ico</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_table">
+      <property name="geometry">
+       <rect>
+        <x>85</x>
+        <y>230</y>
+        <width>34</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::ClickFocus</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resourse.qrc">
+        <normaloff>:/drawtool/images/drawtool/table.ico</normaloff>:/drawtool/images/drawtool/table.ico</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_scale">
+      <property name="geometry">
+       <rect>
+        <x>155</x>
+        <y>230</y>
+        <width>34</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::ClickFocus</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resourse.qrc">
+        <normaloff>:/drawtool/images/drawtool/kedu.ico</normaloff>:/drawtool/images/drawtool/kedu.ico</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>85</x>
+        <y>55</y>
+        <width>31</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>折线</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>148</x>
+        <y>55</y>
+        <width>55</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>宋体</family>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>曲线/圆弧</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>148</x>
+        <y>125</y>
+        <width>55</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>宋体</family>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>圆角矩形</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>85</x>
+        <y>125</y>
+        <width>31</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>矩形</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>125</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>宋体</family>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>自由直线</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>195</y>
+        <width>41</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>圆/椭圆</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>85</x>
+        <y>195</y>
+        <width>41</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>多边形</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>195</y>
+        <width>31</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>宋体</family>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>扇形</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>265</y>
+        <width>31</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>宋体</family>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>刻度</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>85</x>
+        <y>265</y>
+        <width>31</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>表格</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>265</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>静态文本</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_34">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>55</y>
+        <width>31</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>直线</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="m_toolwidgetCtl" native="true">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>10</y>
+      <width>231</width>
+      <height>601</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(8, 45, 105);</string>
+    </property>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>211</width>
+       <height>581</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>控件</string>
+     </property>
+     <widget class="QPushButton" name="btn_switch">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>34</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::ClickFocus</enum>
+      </property>
+      <property name="toolTip">
+       <string/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resourse.qrc">
+        <normaloff>:/btn/images/bitbutton.ico</normaloff>:/btn/images/bitbutton.ico</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_dataDisplay">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>20</y>
+        <width>34</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::ClickFocus</enum>
+      </property>
+      <property name="toolTip">
+       <string/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resourse.qrc">
+        <normaloff>:/btn/images/datadisplay.ico</normaloff>:/btn/images/datadisplay.ico</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_metre">
+      <property name="geometry">
+       <rect>
+        <x>155</x>
+        <y>20</y>
+        <width>34</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::ClickFocus</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resourse.qrc">
+        <normaloff>:/thing/images/thing/meter.ico</normaloff>:/thing/images/thing/meter.ico</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_picture">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>90</y>
+        <width>34</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::ClickFocus</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resourse.qrc">
+        <normaloff>:/thing/images/thing/staticpicture.ico</normaloff>:/thing/images/thing/staticpicture.ico</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_messageDisplay">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>90</y>
+        <width>34</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::ClickFocus</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resourse.qrc">
+        <normaloff>:/thing/images/thing/messagedisplay.ico</normaloff>:/thing/images/thing/messagedisplay.ico</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_trend">
+      <property name="geometry">
+       <rect>
+        <x>155</x>
+        <y>90</y>
+        <width>34</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::ClickFocus</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resourse.qrc">
+        <normaloff>:/thing/images/thing/trendchard.ico</normaloff>:/thing/images/thing/trendchard.ico</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_datagroup">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>160</y>
+        <width>34</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::ClickFocus</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resourse.qrc">
+        <normaloff>:/thing/images/thing/datagroup.ico</normaloff>:/thing/images/thing/datagroup.ico</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_hisdataDisplay">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>160</y>
+        <width>34</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::ClickFocus</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resourse.qrc">
+        <normaloff>:/thing/images/thing/hisrecdisplay.ico</normaloff>:/thing/images/thing/hisrecdisplay.ico</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_dyncircle">
+      <property name="geometry">
+       <rect>
+        <x>155</x>
+        <y>160</y>
+        <width>34</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::ClickFocus</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resourse.qrc">
+        <normaloff>:/thing/images/thing/dynamiccircle.ico</normaloff>:/thing/images/thing/dynamiccircle.ico</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_dynrect">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>230</y>
+        <width>34</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::ClickFocus</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resourse.qrc">
+        <normaloff>:/thing/images/thing/dynamicrec.ico</normaloff>:/thing/images/thing/dynamicrec.ico</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_flow">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>230</y>
+        <width>34</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::ClickFocus</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resourse.qrc">
+        <normaloff>:/thing/images/thing/flowblock.ico</normaloff>:/thing/images/thing/flowblock.ico</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_animation">
+      <property name="geometry">
+       <rect>
+        <x>155</x>
+        <y>230</y>
+        <width>34</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::ClickFocus</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resourse.qrc">
+        <normaloff>:/thing/images/thing/DymicMove.ico</normaloff>:/thing/images/thing/DymicMove.ico</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_gif">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>300</y>
+        <width>34</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::ClickFocus</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resourse.qrc">
+        <normaloff>:/thing/images/thing/GIFdisplay.ico</normaloff>:/thing/images/thing/GIFdisplay.ico</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_alarmDisplay">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>300</y>
+        <width>34</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::ClickFocus</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resourse.qrc">
+        <normaloff>:/thing/images/thing/alarmcontrol.ico</normaloff>:/thing/images/thing/alarmcontrol.ico</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_alarmbar">
+      <property name="geometry">
+       <rect>
+        <x>155</x>
+        <y>300</y>
+        <width>34</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::ClickFocus</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resourse.qrc">
+        <normaloff>:/thing/images/thing/dynamicalarmbar.ico</normaloff>:/thing/images/thing/dynamicalarmbar.ico</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_hisalarmDisplay">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>370</y>
+        <width>34</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::ClickFocus</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resourse.qrc">
+        <normaloff>:/thing/images/thing/hisalarmdialog.ico</normaloff>:/thing/images/thing/hisalarmdialog.ico</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_recipeselect">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>440</y>
+        <width>34</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::ClickFocus</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resourse.qrc">
+        <normaloff>:/thing/images/thing/recipechoice.ico</normaloff>:/thing/images/thing/recipechoice.ico</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_slider">
+      <property name="geometry">
+       <rect>
+        <x>155</x>
+        <y>370</y>
+        <width>34</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::ClickFocus</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resourse.qrc">
+        <normaloff>:/thing/images/thing/slider.ico</normaloff>:/thing/images/thing/slider.ico</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_recipeDisplay">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>440</y>
+        <width>34</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::ClickFocus</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resourse.qrc">
+        <normaloff>:/thing/images/thing/recipetable.ico</normaloff>:/thing/images/thing/recipetable.ico</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_combox">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>370</y>
+        <width>34</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::ClickFocus</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resourse.qrc">
+        <normaloff>:/thing/images/thing/combox.ico</normaloff>:/thing/images/thing/combox.ico</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_MF">
+      <property name="geometry">
+       <rect>
+        <x>155</x>
+        <y>440</y>
+        <width>34</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::ClickFocus</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resourse.qrc">
+        <normaloff>:/standardtool/images/mfbtn..ico</normaloff>:/standardtool/images/mfbtn..ico</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_message">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>510</y>
+        <width>34</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::ClickFocus</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resourse.qrc">
+        <normaloff>:/standardtool/images/msmboard.ico</normaloff>:/standardtool/images/msmboard.ico</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>55</y>
+        <width>31</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>开关</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>75</x>
+        <y>55</y>
+        <width>51</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>数值显示</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>155</x>
+        <y>55</y>
+        <width>31</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>图表</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>125</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>图片显示</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_16">
+      <property name="geometry">
+       <rect>
+        <x>155</x>
+        <y>125</y>
+        <width>31</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>曲线</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_17">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>125</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>消息显示</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_18">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>195</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>数据群组</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_19">
+      <property name="geometry">
+       <rect>
+        <x>155</x>
+        <y>195</y>
+        <width>41</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>动态圆</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_20">
+      <property name="geometry">
+       <rect>
+        <x>75</x>
+        <y>195</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>历史记录</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_21">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>265</y>
+        <width>41</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>流动块</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_22">
+      <property name="geometry">
+       <rect>
+        <x>155</x>
+        <y>265</y>
+        <width>31</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>动画</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_23">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>265</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>动态矩形</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_24">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>335</y>
+        <width>41</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>GIF显示</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_25">
+      <property name="geometry">
+       <rect>
+        <x>75</x>
+        <y>335</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>报警显示</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_26">
+      <property name="geometry">
+       <rect>
+        <x>145</x>
+        <y>335</y>
+        <width>61</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>动态报警条</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_27">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>405</y>
+        <width>51</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>历史
+报警显示</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_28">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>405</y>
+        <width>51</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>滑动
+模拟开关</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_29">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>405</y>
+        <width>51</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>多功能
+选择按钮</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_30">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>475</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>配方显示</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_31">
+      <property name="geometry">
+       <rect>
+        <x>145</x>
+        <y>475</y>
+        <width>61</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>多功能按钮</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_32">
+      <property name="geometry">
+       <rect>
+        <x>75</x>
+        <y>475</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>配方选择</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_33">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>545</y>
+        <width>41</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>留言板</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_Combobox">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>510</y>
+        <width>34</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::ClickFocus</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resourse.qrc">
+        <normaloff>:/thing/images/thing/combo.ico</normaloff>:/thing/images/thing/combo.ico</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_35">
+      <property name="geometry">
+       <rect>
+        <x>78</x>
+        <y>544</y>
+        <width>41</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>下拉框</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_XYtrend">
+      <property name="geometry">
+       <rect>
+        <x>152</x>
+        <y>510</y>
+        <width>34</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::ClickFocus</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resourse.qrc">
+        <normaloff>:/thing/images/thing/XYtrendchart.ico</normaloff>:/thing/images/thing/XYtrendchart.ico</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_36">
+      <property name="geometry">
+       <rect>
+        <x>144</x>
+        <y>544</y>
+        <width>61</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string> X-Y曲线</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1098</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(233, 239, 249, 255), stop:1 rgba(191, 214, 243, 255));
+border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 178, 102, 255), stop:0.55 rgba(235, 148, 61, 255), stop:0.98 rgba(0, 0, 0, 255), stop:1 rgba(0, 0, 0, 0));
+color: rgb(8, 45, 105);
+font: 9pt &quot;宋体&quot;;</string>
+   </property>
+   <widget class="QMenu" name="menu_F">
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.596591 rgba(236, 233, 216, 255));
+selection-color: rgb(255, 255, 255);
+selection-background-color: rgb(51, 102, 204);</string>
+    </property>
+    <property name="title">
+     <string>文件(&amp;F)</string>
+    </property>
+    <widget class="QMenu" name="menu_recentFile">
+     <property name="title">
+      <string>最近打开的工程</string>
+     </property>
+    </widget>
+    <addaction name="action_new_pro"/>
+    <addaction name="action_open_pro"/>
+    <addaction name="action_close"/>
+    <addaction name="separator"/>
+    <addaction name="action_save"/>
+    <addaction name="action_save_as"/>
+    <addaction name="separator"/>
+    <addaction name="actionCompress"/>
+    <addaction name="separator"/>
+    <addaction name="menu_recentFile"/>
+    <addaction name="separator"/>
+    <addaction name="action_quit"/>
+   </widget>
+   <widget class="QMenu" name="menu_E">
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.596591 rgba(236, 233, 216, 255));
+selection-color: rgb(255, 255, 255);
+selection-background-color: rgb(51, 102, 204);</string>
+    </property>
+    <property name="title">
+     <string>编辑(&amp;E)</string>
+    </property>
+    <widget class="QMenu" name="menu_subalign">
+     <property name="title">
+      <string>对齐</string>
+     </property>
+     <addaction name="action_top"/>
+     <addaction name="action_under"/>
+     <addaction name="action_vcenter"/>
+     <addaction name="action_left"/>
+     <addaction name="action_right"/>
+     <addaction name="action_hcenter"/>
+     <addaction name="separator"/>
+     <addaction name="action_horizontal"/>
+     <addaction name="action_vertcal"/>
+     <addaction name="separator"/>
+     <addaction name="action_widthsame"/>
+     <addaction name="action_heightsame"/>
+     <addaction name="action_widthheightsame"/>
+    </widget>
+    <widget class="QMenu" name="menu_sublayout">
+     <property name="title">
+      <string>层次</string>
+     </property>
+     <addaction name="action_bringtop"/>
+     <addaction name="action_bringforward"/>
+     <addaction name="action_sengtoback"/>
+     <addaction name="action_bringback"/>
+    </widget>
+    <widget class="QMenu" name="menu_subgroup">
+     <property name="statusTip">
+      <string/>
+     </property>
+     <property name="title">
+      <string>组合</string>
+     </property>
+     <addaction name="action_group"/>
+     <addaction name="action_split"/>
+    </widget>
+    <widget class="QMenu" name="menu_7">
+     <property name="title">
+      <string>镜像</string>
+     </property>
+     <addaction name="action_h"/>
+     <addaction name="action_v"/>
+    </widget>
+    <widget class="QMenu" name="menu_subpictureratio">
+     <property name="title">
+      <string>图像比例</string>
+     </property>
+     <addaction name="action_zoonbig"/>
+     <addaction name="action_zoonfit"/>
+     <addaction name="action_zoonsmall"/>
+    </widget>
+    <addaction name="action_cut"/>
+    <addaction name="action_copy"/>
+    <addaction name="action_copym"/>
+    <addaction name="action_paste"/>
+    <addaction name="action_delete"/>
+    <addaction name="separator"/>
+    <addaction name="action_checkall"/>
+    <addaction name="menu_subalign"/>
+    <addaction name="menu_sublayout"/>
+    <addaction name="separator"/>
+    <addaction name="menu_subgroup"/>
+    <addaction name="menu_7"/>
+    <addaction name="separator"/>
+    <addaction name="menu_subpictureratio"/>
+    <addaction name="separator"/>
+    <addaction name="action_panview"/>
+    <addaction name="separator"/>
+    <addaction name="action_grid"/>
+    <addaction name="separator"/>
+    <addaction name="action_upscreen"/>
+    <addaction name="action_nextscreen"/>
+    <addaction name="action_openpropertiset"/>
+    <addaction name="separator"/>
+    <addaction name="action_address_find"/>
+    <addaction name="action_address_table"/>
+    <addaction name="separator"/>
+    <addaction name="action_reverse_selection"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menu_look">
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.596591 rgba(236, 233, 216, 255));
+selection-color: rgb(255, 255, 255);
+selection-background-color: rgb(51, 102, 204);</string>
+    </property>
+    <property name="title">
+     <string>查看(&amp;A)</string>
+    </property>
+    <addaction name="action_36"/>
+    <addaction name="separator"/>
+    <addaction name="action_37"/>
+    <addaction name="separator"/>
+    <addaction name="action_tool"/>
+    <addaction name="separator"/>
+    <addaction name="action_40"/>
+    <addaction name="separator"/>
+    <addaction name="action_41"/>
+    <addaction name="action_42"/>
+   </widget>
+   <widget class="QMenu" name="menu_H">
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.596591 rgba(236, 233, 216, 255));
+selection-color: rgb(255, 255, 255);
+selection-background-color: rgb(51, 102, 204);</string>
+    </property>
+    <property name="title">
+     <string>绘图(&amp;G)</string>
+    </property>
+    <addaction name="action_line"/>
+    <addaction name="action_foldline"/>
+    <addaction name="action_blight_circle"/>
+    <addaction name="action_freeline"/>
+    <addaction name="action_rect"/>
+    <addaction name="action_RoundedRect"/>
+    <addaction name="action_ellipse"/>
+    <addaction name="action_polygon"/>
+    <addaction name="action_ArcItem"/>
+    <addaction name="action_text"/>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+    <addaction name="action_table"/>
+    <addaction name="action_mark"/>
+   </widget>
+   <widget class="QMenu" name="menu_thing">
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.596591 rgba(236, 233, 216, 255));
+selection-color: rgb(255, 255, 255);
+selection-background-color: rgb(51, 102, 204);</string>
+    </property>
+    <property name="title">
+     <string>物件(&amp;W)</string>
+    </property>
+    <widget class="QMenu" name="menu">
+     <property name="title">
+      <string>更多按钮</string>
+     </property>
+     <addaction name="action_ComboBox"/>
+     <addaction name="action_Slider"/>
+    </widget>
+    <widget class="QMenu" name="menu_5">
+     <property name="title">
+      <string>动态图</string>
+     </property>
+     <addaction name="action_dynamiccircle"/>
+     <addaction name="action_dynamicrect"/>
+     <addaction name="action_flow_block"/>
+     <addaction name="action_Animation"/>
+    </widget>
+    <widget class="QMenu" name="menu_6">
+     <property name="title">
+      <string>图表</string>
+     </property>
+     <addaction name="action_trendchart"/>
+     <addaction name="action_DatagroupDisplay"/>
+     <addaction name="graphicsitem"/>
+     <addaction name="action_X_Y"/>
+    </widget>
+    <widget class="QMenu" name="menu_9">
+     <property name="title">
+      <string>报警</string>
+     </property>
+     <addaction name="action_arlamcontrol"/>
+     <addaction name="action_dynamicarlarm"/>
+     <addaction name="action_histotyarlarm"/>
+    </widget>
+    <addaction name="action_bitbutton"/>
+    <addaction name="dataplay"/>
+    <addaction name="menu"/>
+    <addaction name="separator"/>
+    <addaction name="action_messagedisplay"/>
+    <addaction name="separator"/>
+    <addaction name="pictruedisplay"/>
+    <addaction name="action_GIFoutput"/>
+    <addaction name="separator"/>
+    <addaction name="menu_5"/>
+    <addaction name="separator"/>
+    <addaction name="menu_6"/>
+    <addaction name="action_historyrecord"/>
+    <addaction name="separator"/>
+    <addaction name="menu_9"/>
+    <addaction name="actionRecipeChoice"/>
+    <addaction name="action_recipetable"/>
+    <addaction name="action_Keyboard"/>
+    <addaction name="action_MFbtn"/>
+    <addaction name="action_messageboard"/>
+   </widget>
+   <widget class="QMenu" name="menu_D">
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.596591 rgba(236, 233, 216, 255));
+selection-color: rgb(255, 255, 255);
+selection-background-color: rgb(51, 102, 204);</string>
+    </property>
+    <property name="title">
+     <string>下载(&amp;D)</string>
+    </property>
+    <addaction name="action_offline_simulation"/>
+    <addaction name="separator"/>
+    <addaction name="action_USBdownload"/>
+    <addaction name="separator"/>
+    <addaction name="action_upload"/>
+   </widget>
+   <widget class="QMenu" name="menu_H_2">
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.596591 rgba(236, 233, 216, 255));
+selection-color: rgb(255, 255, 255);
+selection-background-color: rgb(51, 102, 204);</string>
+    </property>
+    <property name="title">
+     <string>帮助(&amp;H)</string>
+    </property>
+    <addaction name="action_H"/>
+    <addaction name="action_SamDraw3_4"/>
+    <addaction name="action_HMI"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.596591 rgba(236, 233, 216, 255));
+selection-color: rgb(255, 255, 255);
+selection-background-color: rgb(51, 102, 204);</string>
+    </property>
+    <property name="title">
+     <string>语言(&amp;R)</string>
+    </property>
+    <addaction name="action_chinese"/>
+    <addaction name="action_english"/>
+   </widget>
+   <widget class="QMenu" name="menu_S">
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.596591 rgba(236, 233, 216, 255));
+selection-color: rgb(255, 255, 255);
+selection-background-color: rgb(51, 102, 204);</string>
+    </property>
+    <property name="title">
+     <string>设定(&amp;S)</string>
+    </property>
+    <addaction name="action_User_Keybaor"/>
+    <addaction name="action_datasamp"/>
+    <addaction name="action_waring"/>
+    <addaction name="action_rep"/>
+    <addaction name="action_script"/>
+   </widget>
+   <addaction name="menu_F"/>
+   <addaction name="menu_E"/>
+   <addaction name="menu_look"/>
+   <addaction name="menu_H"/>
+   <addaction name="menu_thing"/>
+   <addaction name="menu_S"/>
+   <addaction name="menu_D"/>
+   <addaction name="menu_H_2"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar">
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(197, 222, 255);
+font: 9pt &quot;宋体&quot;;</string>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="standardToolBar">
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>5000</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>9</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="mouseTracking">
+    <bool>false</bool>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::NoContextMenu</enum>
+   </property>
+   <property name="windowTitle">
+    <string>标准工具栏</string>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(197, 222, 255);
+font: 9pt &quot;宋体&quot;;
+color: rgb(8, 45, 105);</string>
+   </property>
+   <property name="movable">
+    <bool>true</bool>
+   </property>
+   <property name="allowedAreas">
+    <set>Qt::BottomToolBarArea|Qt::TopToolBarArea</set>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_new_pro"/>
+   <addaction name="action_open_pro"/>
+   <addaction name="action_new_screen"/>
+   <addaction name="action_save"/>
+   <addaction name="action_cut"/>
+   <addaction name="action_copy"/>
+   <addaction name="action_paste"/>
+   <addaction name="action_delete"/>
+   <addaction name="action_openpropertiset"/>
+   <addaction name="action_address_find"/>
+   <addaction name="action_address_table"/>
+   <addaction name="action_macro_find"/>
+   <addaction name="action_macro_admin"/>
+   <addaction name="action_offline_simulation"/>
+   <addaction name="action_USBdownload"/>
+  </widget>
+  <widget class="QToolBar" name="mapToolBar">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <property name="windowTitle">
+    <string>绘图工具栏</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(197, 222, 255);
+font: 9pt &quot;宋体&quot;;
+color: rgb(8, 45, 105);</string>
+   </property>
+   <property name="allowedAreas">
+    <set>Qt::BottomToolBarArea|Qt::TopToolBarArea</set>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_group"/>
+   <addaction name="action_split"/>
+   <addaction name="action_delock"/>
+   <addaction name="action_lock"/>
+   <addaction name="action_v"/>
+   <addaction name="action_h"/>
+   <addaction name="action_grid"/>
+   <addaction name="action_zoonfit"/>
+   <addaction name="action_zoonbig"/>
+   <addaction name="action_zoonsmall"/>
+  </widget>
+  <action name="action_new_pro">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/standardtool/images/standardtool/11.ico</normaloff>:/standardtool/images/standardtool/11.ico</iconset>
+   </property>
+   <property name="text">
+    <string>新建工程(&amp;N)...</string>
+   </property>
+   <property name="iconText">
+    <string>新建
+工程</string>
+   </property>
+   <property name="toolTip">
+    <string>新建工程(N)</string>
+   </property>
+   <property name="statusTip">
+    <string>新建工程</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="action_open_pro">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/standardtool/images/standardtool/open.ico</normaloff>:/standardtool/images/standardtool/open.ico</iconset>
+   </property>
+   <property name="text">
+    <string>打开工程(&amp;O)...</string>
+   </property>
+   <property name="iconText">
+    <string>打开
+工程</string>
+   </property>
+   <property name="toolTip">
+    <string>打开工程(O)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="action_new_screen">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/standardtool/images/standardtool/newscreen.ico</normaloff>:/standardtool/images/standardtool/newscreen.ico</iconset>
+   </property>
+   <property name="text">
+    <string>新建画面</string>
+   </property>
+   <property name="iconText">
+    <string>新建
+画面</string>
+   </property>
+   <property name="toolTip">
+    <string>新建画面</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="action_save">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/standardtool/images/standardtool/save.ico</normaloff>:/standardtool/images/standardtool/save.ico</iconset>
+   </property>
+   <property name="text">
+    <string>保存(&amp;S)</string>
+   </property>
+   <property name="iconText">
+    <string>
+保存</string>
+   </property>
+   <property name="toolTip">
+    <string>保存(S)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="action_save_as">
+   <property name="text">
+    <string>另存为</string>
+   </property>
+   <property name="toolTip">
+    <string>另存为</string>
+   </property>
+  </action>
+  <action name="action_quit">
+   <property name="text">
+    <string>退出(&amp;Q)</string>
+   </property>
+   <property name="toolTip">
+    <string>退出(Q)</string>
+   </property>
+  </action>
+  <action name="action_cut">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/standardtool/images/standardtool/cut.ico</normaloff>:/standardtool/images/standardtool/cut.ico</iconset>
+   </property>
+   <property name="text">
+    <string>剪切(&amp;T)</string>
+   </property>
+   <property name="iconText">
+    <string>
+剪切</string>
+   </property>
+   <property name="toolTip">
+    <string>剪切(T)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
+  </action>
+  <action name="action_copy">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/standardtool/images/standardtool/copy.ico</normaloff>:/standardtool/images/standardtool/copy.ico</iconset>
+   </property>
+   <property name="text">
+    <string>复制(&amp;C)</string>
+   </property>
+   <property name="iconText">
+    <string>
+复制</string>
+   </property>
+   <property name="toolTip">
+    <string>复制(C)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="action_copym">
+   <property name="text">
+    <string>多重复制(&amp;D)</string>
+   </property>
+   <property name="toolTip">
+    <string>多重复制(D)</string>
+   </property>
+  </action>
+  <action name="action_paste">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/standardtool/images/standardtool/paste.ico</normaloff>:/standardtool/images/standardtool/paste.ico</iconset>
+   </property>
+   <property name="text">
+    <string>粘贴(&amp;P)</string>
+   </property>
+   <property name="iconText">
+    <string>
+粘贴</string>
+   </property>
+   <property name="toolTip">
+    <string>粘贴(P)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="action_delete">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/standardtool/images/standardtool/delete.ico</normaloff>:/standardtool/images/standardtool/delete.ico</iconset>
+   </property>
+   <property name="text">
+    <string>删除(&amp;D)</string>
+   </property>
+   <property name="iconText">
+    <string>
+删除</string>
+   </property>
+   <property name="toolTip">
+    <string>删除(D)</string>
+   </property>
+   <property name="shortcut">
+    <string>Del</string>
+   </property>
+  </action>
+  <action name="action_checkall">
+   <property name="text">
+    <string>全选(&amp;A)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="action_panview">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/standardtool/images/standardtool/panview.ico</normaloff>:/standardtool/images/standardtool/panview.ico</iconset>
+   </property>
+   <property name="text">
+    <string>平移视图</string>
+   </property>
+   <property name="iconText">
+    <string>
+平移</string>
+   </property>
+   <property name="statusTip">
+    <string>平移视图</string>
+   </property>
+  </action>
+  <action name="action_grid">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/standardtool/images/standardtool/Grid.ico</normaloff>:/standardtool/images/standardtool/Grid.ico</iconset>
+   </property>
+   <property name="text">
+    <string>网格</string>
+   </property>
+   <property name="iconText">
+    <string>
+网格</string>
+   </property>
+   <property name="statusTip">
+    <string>网格</string>
+   </property>
+  </action>
+  <action name="action_frame_mark">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/standardtool/images/standardtool/borderscale.ico</normaloff>:/standardtool/images/standardtool/borderscale.ico</iconset>
+   </property>
+   <property name="text">
+    <string>边框刻度</string>
+   </property>
+   <property name="statusTip">
+    <string>边框宽度</string>
+   </property>
+  </action>
+  <action name="action_upscreen">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/drawtool/images/drawtool/left.ico</normaloff>:/drawtool/images/drawtool/left.ico</iconset>
+   </property>
+   <property name="text">
+    <string>上一幅画面</string>
+   </property>
+   <property name="iconText">
+    <string>上一幅
+画面</string>
+   </property>
+   <property name="toolTip">
+    <string>上一幅画面</string>
+   </property>
+   <property name="statusTip">
+    <string>上一幅画面</string>
+   </property>
+  </action>
+  <action name="action_nextscreen">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/drawtool/images/drawtool/right.ico</normaloff>:/drawtool/images/drawtool/right.ico</iconset>
+   </property>
+   <property name="text">
+    <string>下一幅画面</string>
+   </property>
+   <property name="iconText">
+    <string>下一幅
+画面</string>
+   </property>
+   <property name="statusTip">
+    <string>下一幅画面</string>
+   </property>
+  </action>
+  <action name="action_open_proprerty">
+   <property name="text">
+    <string>打开属性设置</string>
+   </property>
+  </action>
+  <action name="action_reverse_selection">
+   <property name="text">
+    <string>反向选择</string>
+   </property>
+  </action>
+  <action name="action_36">
+   <property name="text">
+    <string>标准工具栏</string>
+   </property>
+  </action>
+  <action name="action_37">
+   <property name="text">
+    <string>扩展工具栏</string>
+   </property>
+  </action>
+  <action name="action_38">
+   <property name="text">
+    <string>物件工具栏</string>
+   </property>
+  </action>
+  <action name="action_39">
+   <property name="text">
+    <string>组态工具箱</string>
+   </property>
+  </action>
+  <action name="action_40">
+   <property name="text">
+    <string>标准状态栏</string>
+   </property>
+  </action>
+  <action name="action_41">
+   <property name="text">
+    <string>信息输出窗口</string>
+   </property>
+  </action>
+  <action name="action_42">
+   <property name="text">
+    <string>工程管理器</string>
+   </property>
+  </action>
+  <action name="action_line">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/drawtool/images/drawtool/line.ico</normaloff>:/drawtool/images/drawtool/line.ico</iconset>
+   </property>
+   <property name="text">
+    <string>直线(&amp;L)</string>
+   </property>
+   <property name="toolTip">
+    <string>直线</string>
+   </property>
+   <property name="statusTip">
+    <string>直线</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="action_foldline">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/drawtool/images/drawtool/foldline.ico</normaloff>:/drawtool/images/drawtool/foldline.ico</iconset>
+   </property>
+   <property name="text">
+    <string>折线(&amp;B)</string>
+   </property>
+   <property name="toolTip">
+    <string>折线</string>
+   </property>
+   <property name="statusTip">
+    <string>折线</string>
+   </property>
+  </action>
+  <action name="action_blight_circle">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/drawtool/images/drawtool/quxing.ico</normaloff>:/drawtool/images/drawtool/quxing.ico</iconset>
+   </property>
+   <property name="text">
+    <string>曲线/圆弧(&amp;A)</string>
+   </property>
+   <property name="toolTip">
+    <string>曲线/圆弧</string>
+   </property>
+   <property name="statusTip">
+    <string>曲线/圆弧</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="action_freeline">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/drawtool/images/drawtool/freeline.ico</normaloff>:/drawtool/images/drawtool/freeline.ico</iconset>
+   </property>
+   <property name="text">
+    <string>自由直线</string>
+   </property>
+   <property name="toolTip">
+    <string>自由直线</string>
+   </property>
+   <property name="statusTip">
+    <string>自由直线</string>
+   </property>
+  </action>
+  <action name="action_line_link">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/drawtool/images/drawtool/linelink.ico</normaloff>:/drawtool/images/drawtool/linelink.ico</iconset>
+   </property>
+   <property name="text">
+    <string>直线连接线</string>
+   </property>
+   <property name="toolTip">
+    <string>直线连接线</string>
+   </property>
+   <property name="statusTip">
+    <string>直线连接线</string>
+   </property>
+  </action>
+  <action name="action_blight_link">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/drawtool/images/drawtool/quxlink.ico</normaloff>:/drawtool/images/drawtool/quxlink.ico</iconset>
+   </property>
+   <property name="text">
+    <string>曲线连接线</string>
+   </property>
+   <property name="toolTip">
+    <string>曲线连接线</string>
+   </property>
+   <property name="statusTip">
+    <string>曲线连接线</string>
+   </property>
+   <property name="whatsThis">
+    <string>曲线连接线</string>
+   </property>
+  </action>
+  <action name="action_rect">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/standardtool/images/standardtool/rect.ico</normaloff>:/standardtool/images/standardtool/rect.ico</iconset>
+   </property>
+   <property name="text">
+    <string>矩形(&amp;R)</string>
+   </property>
+   <property name="toolTip">
+    <string>矩形</string>
+   </property>
+   <property name="statusTip">
+    <string>矩形</string>
+   </property>
+  </action>
+  <action name="action_ellipse">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/drawtool/images/drawtool/ellpse.ico</normaloff>:/drawtool/images/drawtool/ellpse.ico</iconset>
+   </property>
+   <property name="text">
+    <string>椭圆(&amp;E)</string>
+   </property>
+   <property name="toolTip">
+    <string>椭圆</string>
+   </property>
+   <property name="statusTip">
+    <string>椭圆</string>
+   </property>
+  </action>
+  <action name="action_polygon">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/standardtool/images/standardtool/polygon.ico</normaloff>:/standardtool/images/standardtool/polygon.ico</iconset>
+   </property>
+   <property name="text">
+    <string>多边形(&amp;Y)</string>
+   </property>
+   <property name="toolTip">
+    <string>多边形</string>
+   </property>
+   <property name="statusTip">
+    <string>多边形</string>
+   </property>
+  </action>
+  <action name="action_text">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/drawtool/images/drawtool/text.ico</normaloff>:/drawtool/images/drawtool/text.ico</iconset>
+   </property>
+   <property name="text">
+    <string>文字(&amp;T)</string>
+   </property>
+   <property name="toolTip">
+    <string>文字</string>
+   </property>
+   <property name="statusTip">
+    <string>文字</string>
+   </property>
+  </action>
+  <action name="action_stateon">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/drawtool/images/drawtool/on.ico</normaloff>:/drawtool/images/drawtool/on.ico</iconset>
+   </property>
+   <property name="text">
+    <string>设置关状态(&quot;1&quot;)</string>
+   </property>
+   <property name="statusTip">
+    <string>状态模拟变换1</string>
+   </property>
+  </action>
+  <action name="action_state0">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/drawtool/images/drawtool/123.ico</normaloff>:/drawtool/images/drawtool/123.ico</iconset>
+   </property>
+   <property name="text">
+    <string>设置开状态(&quot;0&quot;)</string>
+   </property>
+   <property name="statusTip">
+    <string>状态模拟变换0</string>
+   </property>
+  </action>
+  <action name="action_table">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/drawtool/images/drawtool/table.ico</normaloff>:/drawtool/images/drawtool/table.ico</iconset>
+   </property>
+   <property name="text">
+    <string>表格</string>
+   </property>
+   <property name="toolTip">
+    <string>表格</string>
+   </property>
+   <property name="statusTip">
+    <string>表格</string>
+   </property>
+  </action>
+  <action name="action_mark">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/drawtool/images/drawtool/kedu.ico</normaloff>:/drawtool/images/drawtool/kedu.ico</iconset>
+   </property>
+   <property name="text">
+    <string>刻度</string>
+   </property>
+   <property name="toolTip">
+    <string>刻度</string>
+   </property>
+   <property name="statusTip">
+    <string>刻度</string>
+   </property>
+  </action>
+  <action name="action_bitbutton">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/btn/images/bitbutton.ico</normaloff>:/btn/images/bitbutton.ico</iconset>
+   </property>
+   <property name="text">
+    <string>开关</string>
+   </property>
+   <property name="toolTip">
+    <string>开关</string>
+   </property>
+   <property name="statusTip">
+    <string>位按钮</string>
+   </property>
+  </action>
+  <action name="action_GIFoutput">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/thing/images/thing/GIFdisplay.ico</normaloff>:/thing/images/thing/GIFdisplay.ico</iconset>
+   </property>
+   <property name="text">
+    <string>GIF显示器</string>
+   </property>
+   <property name="statusTip">
+    <string>GIF显示器</string>
+   </property>
+  </action>
+  <action name="action_trendchart">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/thing/images/thing/trendchard.ico</normaloff>:/thing/images/thing/trendchard.ico</iconset>
+   </property>
+   <property name="text">
+    <string>趋势图</string>
+   </property>
+   <property name="statusTip">
+    <string>趋势图</string>
+   </property>
+  </action>
+  <action name="action_XYtrend">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/thing/images/thing/XYtrendchart.ico</normaloff>:/thing/images/thing/XYtrendchart.ico</iconset>
+   </property>
+   <property name="text">
+    <string>XY趋势图</string>
+   </property>
+   <property name="statusTip">
+    <string>XY趋势图</string>
+   </property>
+  </action>
+  <action name="action_dynamiccircle">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/thing/images/thing/dynamiccircle.ico</normaloff>:/thing/images/thing/dynamiccircle.ico</iconset>
+   </property>
+   <property name="text">
+    <string>动态圆</string>
+   </property>
+   <property name="statusTip">
+    <string>动态圆</string>
+   </property>
+  </action>
+  <action name="action_dynamicrect">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/thing/images/thing/dynamicrec.ico</normaloff>:/thing/images/thing/dynamicrec.ico</iconset>
+   </property>
+   <property name="text">
+    <string>动态矩形</string>
+   </property>
+   <property name="statusTip">
+    <string>动态矩形</string>
+   </property>
+   <property name="whatsThis">
+    <string>动态矩形</string>
+   </property>
+  </action>
+  <action name="action_arlamcontrol">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/thing/images/thing/alarmcontrol.ico</normaloff>:/thing/images/thing/alarmcontrol.ico</iconset>
+   </property>
+   <property name="text">
+    <string>报警控件</string>
+   </property>
+   <property name="statusTip">
+    <string>报警控件</string>
+   </property>
+  </action>
+  <action name="action_dynamicarlarm">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/thing/images/thing/dynamicalarmbar.ico</normaloff>:/thing/images/thing/dynamicalarmbar.ico</iconset>
+   </property>
+   <property name="text">
+    <string>动态报警条</string>
+   </property>
+   <property name="statusTip">
+    <string>动态报警条</string>
+   </property>
+  </action>
+  <action name="action_histotyarlarm">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/thing/images/thing/hisalarmdialog.ico</normaloff>:/thing/images/thing/hisalarmdialog.ico</iconset>
+   </property>
+   <property name="text">
+    <string>历史报警显示器</string>
+   </property>
+   <property name="statusTip">
+    <string>历史报警显示器</string>
+   </property>
+  </action>
+  <action name="action_historyrecord">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/thing/images/thing/hisrecdisplay.ico</normaloff>:/thing/images/thing/hisrecdisplay.ico</iconset>
+   </property>
+   <property name="text">
+    <string>历史数据显示器</string>
+   </property>
+   <property name="statusTip">
+    <string>历史数据显示器</string>
+   </property>
+  </action>
+  <action name="action_messagedisplay">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/thing/images/thing/messagedisplay.ico</normaloff>:/thing/images/thing/messagedisplay.ico</iconset>
+   </property>
+   <property name="text">
+    <string>消息显示</string>
+   </property>
+   <property name="statusTip">
+    <string>消息显示</string>
+   </property>
+  </action>
+  <action name="action_93">
+   <property name="text">
+    <string>画面属性(&amp;P)</string>
+   </property>
+  </action>
+  <action name="action_94">
+   <property name="text">
+    <string>删除画面(&amp;D)</string>
+   </property>
+  </action>
+  <action name="action_P">
+   <property name="text">
+    <string>参数设定(P)</string>
+   </property>
+  </action>
+  <action name="action_96">
+   <property name="text">
+    <string>数位报警</string>
+   </property>
+  </action>
+  <action name="action_97">
+   <property name="text">
+    <string>类比报警</string>
+   </property>
+  </action>
+  <action name="action_R_2">
+   <property name="text">
+    <string>配方设定(&amp;R)</string>
+   </property>
+  </action>
+  <action name="action_M">
+   <property name="text">
+    <string>文件保护(&amp;M)</string>
+   </property>
+  </action>
+  <action name="action_compile">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/debug/images/debug/compile.ico</normaloff>:/debug/images/debug/compile.ico</iconset>
+   </property>
+   <property name="text">
+    <string>编译(&amp;C)</string>
+   </property>
+   <property name="toolTip">
+    <string>编译</string>
+   </property>
+   <property name="statusTip">
+    <string>编译</string>
+   </property>
+  </action>
+  <action name="action_offline_simulation">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/debug/images/debug/offlinesimulation.ico</normaloff>:/debug/images/debug/offlinesimulation.ico</iconset>
+   </property>
+   <property name="text">
+    <string>离线模拟(&amp;M)</string>
+   </property>
+   <property name="iconText">
+    <string>离线
+模拟</string>
+   </property>
+   <property name="toolTip">
+    <string>离线模拟</string>
+   </property>
+   <property name="statusTip">
+    <string>离线模拟</string>
+   </property>
+   <property name="font">
+    <font>
+     <stylestrategy>NoAntialias</stylestrategy>
+    </font>
+   </property>
+  </action>
+  <action name="action_online_simulation">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/debug/images/debug/onlinesimulation.ico</normaloff>:/debug/images/debug/onlinesimulation.ico</iconset>
+   </property>
+   <property name="text">
+    <string>在线模拟</string>
+   </property>
+   <property name="statusTip">
+    <string>在线模拟</string>
+   </property>
+  </action>
+  <action name="action_USBdownload">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/debug/images/debug/usbdownload.ico</normaloff>:/debug/images/debug/usbdownload.ico</iconset>
+   </property>
+   <property name="text">
+    <string>下载工程(&amp;D)</string>
+   </property>
+   <property name="iconText">
+    <string>下载
+工程</string>
+   </property>
+   <property name="toolTip">
+    <string>USB下载</string>
+   </property>
+   <property name="statusTip">
+    <string>USB下载</string>
+   </property>
+  </action>
+  <action name="action_compile_download">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/debug/images/debug/compiledownload.ico</normaloff>:/debug/images/debug/compiledownload.ico</iconset>
+   </property>
+   <property name="text">
+    <string>编译+下载(A)</string>
+   </property>
+   <property name="toolTip">
+    <string>编译+下载</string>
+   </property>
+   <property name="statusTip">
+    <string>编译+下载</string>
+   </property>
+  </action>
+  <action name="action_H">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/file/samdraw小图标/res/help.bmp</normaloff>:/file/samdraw小图标/res/help.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>帮助(&amp;H)</string>
+   </property>
+   <property name="shortcut">
+    <string>F1</string>
+   </property>
+  </action>
+  <action name="action_SamDraw3_4">
+   <property name="text">
+    <string>关于</string>
+   </property>
+  </action>
+  <action name="action_chinese">
+   <property name="text">
+    <string>中文</string>
+   </property>
+  </action>
+  <action name="action_top">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/standardtool/images/standardtool/topalign.ico</normaloff>:/standardtool/images/standardtool/topalign.ico</iconset>
+   </property>
+   <property name="text">
+    <string>上对齐</string>
+   </property>
+   <property name="statusTip">
+    <string>选择组上对齐</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Up</string>
+   </property>
+  </action>
+  <action name="action_under">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/standardtool/images/standardtool/bottomalign.ico</normaloff>:/standardtool/images/standardtool/bottomalign.ico</iconset>
+   </property>
+   <property name="text">
+    <string>下对齐</string>
+   </property>
+   <property name="statusTip">
+    <string>选中组下对齐</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Down</string>
+   </property>
+  </action>
+  <action name="action_vcenter">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/standardtool/images/standardtool/vercenalign.ico</normaloff>:/standardtool/images/standardtool/vercenalign.ico</iconset>
+   </property>
+   <property name="text">
+    <string>垂直居中</string>
+   </property>
+   <property name="statusTip">
+    <string>选中组垂直居中</string>
+   </property>
+  </action>
+  <action name="action_left">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/standardtool/images/standardtool/leftalign.ico</normaloff>:/standardtool/images/standardtool/leftalign.ico</iconset>
+   </property>
+   <property name="text">
+    <string>左对齐</string>
+   </property>
+   <property name="statusTip">
+    <string>选中组左对齐</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Left</string>
+   </property>
+  </action>
+  <action name="action_right">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/standardtool/images/standardtool/rightalign.ico</normaloff>:/standardtool/images/standardtool/rightalign.ico</iconset>
+   </property>
+   <property name="text">
+    <string>右对齐</string>
+   </property>
+   <property name="statusTip">
+    <string>选中组右对齐</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Right</string>
+   </property>
+  </action>
+  <action name="action_hcenter">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/standardtool/images/standardtool/horcenalign.ico</normaloff>:/standardtool/images/standardtool/horcenalign.ico</iconset>
+   </property>
+   <property name="text">
+    <string>水平居中</string>
+   </property>
+   <property name="statusTip">
+    <string>选中组水平居中</string>
+   </property>
+  </action>
+  <action name="action_horizontal">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/standardtool/images/standardtool/horizontal.ico</normaloff>:/standardtool/images/standardtool/horizontal.ico</iconset>
+   </property>
+   <property name="text">
+    <string>水平等间距</string>
+   </property>
+   <property name="statusTip">
+    <string>水平等间距</string>
+   </property>
+   <property name="whatsThis">
+    <string/>
+   </property>
+  </action>
+  <action name="action_vertcal">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/standardtool/images/standardtool/vertical.ico</normaloff>:/standardtool/images/standardtool/vertical.ico</iconset>
+   </property>
+   <property name="text">
+    <string>垂直等间距</string>
+   </property>
+   <property name="statusTip">
+    <string>垂直等间距</string>
+   </property>
+  </action>
+  <action name="action_bringtop">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/standardtool/images/standardtool/bringtotop.ico</normaloff>:/standardtool/images/standardtool/bringtotop.ico</iconset>
+   </property>
+   <property name="text">
+    <string>移到最上层(&amp;F)</string>
+   </property>
+   <property name="statusTip">
+    <string>对象移动到最前层</string>
+   </property>
+  </action>
+  <action name="action_bringforward">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/standardtool/images/standardtool/bringforward.ico</normaloff>:/standardtool/images/standardtool/bringforward.ico</iconset>
+   </property>
+   <property name="text">
+    <string>移到上一层</string>
+   </property>
+   <property name="statusTip">
+    <string>对象移动到前一层</string>
+   </property>
+  </action>
+  <action name="action_sengtoback">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/standardtool/images/standardtool/sendtobottom.ico</normaloff>:/standardtool/images/standardtool/sendtobottom.ico</iconset>
+   </property>
+   <property name="text">
+    <string>移到最下层</string>
+   </property>
+   <property name="statusTip">
+    <string>对象移动最下层</string>
+   </property>
+  </action>
+  <action name="action_bringback">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/standardtool/images/standardtool/bringbackward.ico</normaloff>:/standardtool/images/standardtool/bringbackward.ico</iconset>
+   </property>
+   <property name="text">
+    <string>移到下一层(&amp;B)</string>
+   </property>
+   <property name="statusTip">
+    <string>对象移动到下一层</string>
+   </property>
+  </action>
+  <action name="action_h">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/standardtool/images/standardtool/hormirror.ico</normaloff>:/standardtool/images/standardtool/hormirror.ico</iconset>
+   </property>
+   <property name="text">
+    <string>水平翻转</string>
+   </property>
+   <property name="iconText">
+    <string>水平
+翻转</string>
+   </property>
+   <property name="statusTip">
+    <string>水平旋转</string>
+   </property>
+  </action>
+  <action name="action_v">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/standardtool/images/standardtool/vermirror.ico</normaloff>:/standardtool/images/standardtool/vermirror.ico</iconset>
+   </property>
+   <property name="text">
+    <string>垂直翻转</string>
+   </property>
+   <property name="iconText">
+    <string>垂直
+翻转</string>
+   </property>
+   <property name="statusTip">
+    <string>垂直旋转</string>
+   </property>
+  </action>
+  <action name="action_group">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/standardtool/images/standardtool/group.ico</normaloff>:/standardtool/images/standardtool/group.ico</iconset>
+   </property>
+   <property name="text">
+    <string>组合</string>
+   </property>
+   <property name="iconText">
+    <string>
+组合</string>
+   </property>
+   <property name="statusTip">
+    <string>组合</string>
+   </property>
+  </action>
+  <action name="action_split">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/standardtool/images/standardtool/ungroup.ico</normaloff>:/standardtool/images/standardtool/ungroup.ico</iconset>
+   </property>
+   <property name="text">
+    <string>取消组合</string>
+   </property>
+   <property name="iconText">
+    <string>取消
+组合</string>
+   </property>
+   <property name="statusTip">
+    <string>拆分</string>
+   </property>
+  </action>
+  <action name="action_zoonbig">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/standardtool/images/standardtool/zoonin.ico</normaloff>:/standardtool/images/standardtool/zoonin.ico</iconset>
+   </property>
+   <property name="text">
+    <string>图像放大一倍</string>
+   </property>
+   <property name="iconText">
+    <string>
+放大</string>
+   </property>
+   <property name="statusTip">
+    <string>图像放大一倍</string>
+   </property>
+  </action>
+  <action name="action_zoonfit">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/standardtool/images/standardtool/zoomfit.ico</normaloff>:/standardtool/images/standardtool/zoomfit.ico</iconset>
+   </property>
+   <property name="text">
+    <string>图像复原</string>
+   </property>
+   <property name="iconText">
+    <string>恢复
+原图</string>
+   </property>
+   <property name="statusTip">
+    <string>图像复原</string>
+   </property>
+  </action>
+  <action name="action_zoonsmall">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/standardtool/images/standardtool/zoomout.ico</normaloff>:/standardtool/images/standardtool/zoomout.ico</iconset>
+   </property>
+   <property name="text">
+    <string>图像缩小一倍</string>
+   </property>
+   <property name="iconText">
+    <string>
+缩小</string>
+   </property>
+   <property name="statusTip">
+    <string>图像缩小一倍</string>
+   </property>
+  </action>
+  <action name="action4">
+   <property name="text">
+    <string>4</string>
+   </property>
+  </action>
+  <action name="action5">
+   <property name="text">
+    <string>5</string>
+   </property>
+  </action>
+  <action name="action6">
+   <property name="text">
+    <string>6</string>
+   </property>
+  </action>
+  <action name="action7">
+   <property name="text">
+    <string>7</string>
+   </property>
+  </action>
+  <action name="action8">
+   <property name="text">
+    <string>8</string>
+   </property>
+  </action>
+  <action name="action9">
+   <property name="text">
+    <string>9</string>
+   </property>
+  </action>
+  <action name="action10">
+   <property name="text">
+    <string>10</string>
+   </property>
+  </action>
+  <action name="action11">
+   <property name="text">
+    <string>11</string>
+   </property>
+  </action>
+  <action name="action12">
+   <property name="text">
+    <string>12</string>
+   </property>
+  </action>
+  <action name="action13">
+   <property name="text">
+    <string>13</string>
+   </property>
+  </action>
+  <action name="action14">
+   <property name="text">
+    <string>14</string>
+   </property>
+  </action>
+  <action name="action15">
+   <property name="text">
+    <string>15</string>
+   </property>
+  </action>
+  <action name="action16">
+   <property name="text">
+    <string>16</string>
+   </property>
+  </action>
+  <action name="action_widthsame">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/standardtool/images/standardtool/makesamewidth.ico</normaloff>:/standardtool/images/standardtool/makesamewidth.ico</iconset>
+   </property>
+   <property name="text">
+    <string>宽度相同</string>
+   </property>
+   <property name="statusTip">
+    <string>选择组宽度相同</string>
+   </property>
+  </action>
+  <action name="action_heightsame">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/standardtool/images/standardtool/makesameheight.ico</normaloff>:/standardtool/images/standardtool/makesameheight.ico</iconset>
+   </property>
+   <property name="text">
+    <string>高度相同</string>
+   </property>
+   <property name="statusTip">
+    <string>选中组高度相同</string>
+   </property>
+  </action>
+  <action name="action_widthheightsame">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/standardtool/images/standardtool/makesamewihi.ico</normaloff>:/standardtool/images/standardtool/makesamewihi.ico</iconset>
+   </property>
+   <property name="text">
+    <string>宽度高度都相同</string>
+   </property>
+   <property name="statusTip">
+    <string>选中组宽度高度都相同</string>
+   </property>
+  </action>
+  <action name="action_openpropertiset">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/drawtool/images/drawtool/set.ico</normaloff>:/drawtool/images/drawtool/set.ico</iconset>
+   </property>
+   <property name="text">
+    <string>打开属性设置</string>
+   </property>
+   <property name="iconText">
+    <string>属性
+设置</string>
+   </property>
+   <property name="statusTip">
+    <string>打开属性设置</string>
+   </property>
+  </action>
+  <action name="action_lock">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/drawtool/images/drawtool/lock.ico</normaloff>:/drawtool/images/drawtool/lock.ico</iconset>
+   </property>
+   <property name="text">
+    <string>锁定</string>
+   </property>
+   <property name="iconText">
+    <string>
+锁定</string>
+   </property>
+   <property name="statusTip">
+    <string>锁定</string>
+   </property>
+  </action>
+  <action name="action_delock">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/drawtool/images/drawtool/delock.ico</normaloff>:/drawtool/images/drawtool/delock.ico</iconset>
+   </property>
+   <property name="text">
+    <string>解锁</string>
+   </property>
+   <property name="iconText">
+    <string>
+解锁</string>
+   </property>
+  </action>
+  <action name="action_address_find">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/drawtool/images/drawtool/addressfind.ico</normaloff>:/drawtool/images/drawtool/addressfind.ico</iconset>
+   </property>
+   <property name="text">
+    <string>查找替换</string>
+   </property>
+   <property name="iconText">
+    <string>查找
+替换</string>
+   </property>
+   <property name="toolTip">
+    <string>查找替换</string>
+   </property>
+  </action>
+  <action name="action_address_table">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/drawtool/images/drawtool/address.ico</normaloff>:/drawtool/images/drawtool/address.ico</iconset>
+   </property>
+   <property name="text">
+    <string>地址使用一览表</string>
+   </property>
+   <property name="iconText">
+    <string>地址一
+览表</string>
+   </property>
+   <property name="toolTip">
+    <string>地址使用一览表</string>
+   </property>
+  </action>
+  <action name="action_project_manager">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/drawtool/images/drawtool/projectadmin.ico</normaloff>:/drawtool/images/drawtool/projectadmin.ico</iconset>
+   </property>
+   <property name="text">
+    <string>工程管理器</string>
+   </property>
+   <property name="iconText">
+    <string>工程
+管理器</string>
+   </property>
+   <property name="toolTip">
+    <string>工程管理器</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="action_information_output">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/drawtool/images/drawtool/output.ico</normaloff>:/drawtool/images/drawtool/output.ico</iconset>
+   </property>
+   <property name="text">
+    <string>信息输出窗口</string>
+   </property>
+   <property name="iconText">
+    <string>信息输
+出窗口</string>
+   </property>
+   <property name="toolTip">
+    <string>信息输出窗口</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="action_close">
+   <property name="text">
+    <string>关闭</string>
+   </property>
+   <property name="toolTip">
+    <string>关闭</string>
+   </property>
+  </action>
+  <action name="action_flow_block">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/thing/images/thing/flowblock.ico</normaloff>:/thing/images/thing/flowblock.ico</iconset>
+   </property>
+   <property name="text">
+    <string>流动块</string>
+   </property>
+   <property name="toolTip">
+    <string>流动块</string>
+   </property>
+  </action>
+  <action name="action_his_tre_display">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/thing/images/thing/histrenddisplay.ico</normaloff>:/thing/images/thing/histrenddisplay.ico</iconset>
+   </property>
+   <property name="text">
+    <string>历史趋势图</string>
+   </property>
+   <property name="toolTip">
+    <string>历史趋势图</string>
+   </property>
+  </action>
+  <action name="action_macro_find">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/drawtool/images/drawtool/marcofind.ico</normaloff>:/drawtool/images/drawtool/marcofind.ico</iconset>
+   </property>
+   <property name="text">
+    <string>宏指令查找</string>
+   </property>
+   <property name="iconText">
+    <string>宏指令
+查找</string>
+   </property>
+   <property name="toolTip">
+    <string>宏指令查找</string>
+   </property>
+  </action>
+  <action name="action_macro_admin">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/drawtool/images/drawtool/marcoadmin.ico</normaloff>:/drawtool/images/drawtool/marcoadmin.ico</iconset>
+   </property>
+   <property name="text">
+    <string>宏指令管理器</string>
+   </property>
+   <property name="iconText">
+    <string>宏指令
+管理器</string>
+   </property>
+   <property name="toolTip">
+    <string>宏指令管理器</string>
+   </property>
+  </action>
+  <action name="action_arrow">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/standardtool/images/standardtool/arrow.ico</normaloff>:/standardtool/images/standardtool/arrow.ico</iconset>
+   </property>
+   <property name="text">
+    <string>滚动箭头</string>
+   </property>
+   <property name="iconText">
+    <string>
+箭头</string>
+   </property>
+   <property name="toolTip">
+    <string>滚动箭头</string>
+   </property>
+  </action>
+  <action name="action_ComboBox">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/thing/images/thing/combox.ico</normaloff>:/thing/images/thing/combox.ico</iconset>
+   </property>
+   <property name="text">
+    <string>多功能选择按钮</string>
+   </property>
+   <property name="toolTip">
+    <string>多功能选择按钮</string>
+   </property>
+  </action>
+  <action name="action_Slider">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/thing/images/thing/slider.ico</normaloff>:/thing/images/thing/slider.ico</iconset>
+   </property>
+   <property name="text">
+    <string>滑块模拟量开关</string>
+   </property>
+   <property name="toolTip">
+    <string>滑块模拟量开关</string>
+   </property>
+  </action>
+  <action name="action_Animation">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/thing/images/thing/DymicMove.ico</normaloff>:/thing/images/thing/DymicMove.ico</iconset>
+   </property>
+   <property name="text">
+    <string>动画</string>
+   </property>
+   <property name="toolTip">
+    <string>动画</string>
+   </property>
+  </action>
+  <action name="action_RoundedRect">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/drawtool/images/drawtool/roundrect.ico</normaloff>:/drawtool/images/drawtool/roundrect.ico</iconset>
+   </property>
+   <property name="text">
+    <string>圆角矩形</string>
+   </property>
+   <property name="toolTip">
+    <string>圆角矩形</string>
+   </property>
+  </action>
+  <action name="action_ArcItem">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/drawtool/images/drawtool/Arcitem.ico</normaloff>:/drawtool/images/drawtool/Arcitem.ico</iconset>
+   </property>
+   <property name="text">
+    <string>扇形</string>
+   </property>
+   <property name="toolTip">
+    <string>扇形</string>
+   </property>
+  </action>
+  <action name="action_DatagroupDisplay">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/thing/images/thing/datagroup.ico</normaloff>:/thing/images/thing/datagroup.ico</iconset>
+   </property>
+   <property name="text">
+    <string>数据群组显示</string>
+   </property>
+   <property name="toolTip">
+    <string>数据群组显示</string>
+   </property>
+  </action>
+  <action name="action_english">
+   <property name="text">
+    <string>英文</string>
+   </property>
+  </action>
+  <action name="action_Keyboard">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/standardtool/images/thing/userkeyboard.ico</normaloff>:/standardtool/images/thing/userkeyboard.ico</iconset>
+   </property>
+   <property name="text">
+    <string>键盘组件</string>
+   </property>
+   <property name="toolTip">
+    <string>键盘组件</string>
+   </property>
+  </action>
+  <action name="action_User_Keybaor">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/tree/images/tree/keyboard.ico</normaloff>:/tree/images/tree/keyboard.ico</iconset>
+   </property>
+   <property name="text">
+    <string>添加自定义键盘</string>
+   </property>
+  </action>
+  <action name="action_6">
+   <property name="text">
+    <string>历史记录显示器</string>
+   </property>
+  </action>
+  <action name="action_recipetable">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/thing/images/thing/recipetable.ico</normaloff>:/thing/images/thing/recipetable.ico</iconset>
+   </property>
+   <property name="text">
+    <string>配方数据显示器</string>
+   </property>
+   <property name="toolTip">
+    <string>配方数据显示器</string>
+   </property>
+  </action>
+  <action name="actionRecipeChoice">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/thing/images/thing/recipechoice.ico</normaloff>:/thing/images/thing/recipechoice.ico</iconset>
+   </property>
+   <property name="text">
+    <string>配方选择器</string>
+   </property>
+   <property name="toolTip">
+    <string>配方选择器</string>
+   </property>
+  </action>
+  <action name="action_opera_record">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/drawtool/images/drawtool/set.ico</normaloff>:/drawtool/images/drawtool/set.ico</iconset>
+   </property>
+   <property name="text">
+    <string>操作日志显示器</string>
+   </property>
+   <property name="toolTip">
+    <string>操作日志显示器</string>
+   </property>
+  </action>
+  <action name="action_chart">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/thing/images/thing/chart.ico</normaloff>:/thing/images/thing/chart.ico</iconset>
+   </property>
+   <property name="text">
+    <string>图表</string>
+   </property>
+   <property name="toolTip">
+    <string>图表</string>
+   </property>
+  </action>
+  <action name="action_value">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/thing/images/thing/datadisplay.ico</normaloff>:/thing/images/thing/datadisplay.ico</iconset>
+   </property>
+   <property name="text">
+    <string>数据显示</string>
+   </property>
+   <property name="toolTip">
+    <string>数据显示</string>
+   </property>
+  </action>
+  <action name="action_image">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/thing/images/thing/picturedisplay.ico</normaloff>:/thing/images/thing/picturedisplay.ico</iconset>
+   </property>
+   <property name="text">
+    <string>图片显示器</string>
+   </property>
+   <property name="toolTip">
+    <string>图片显示器</string>
+   </property>
+  </action>
+  <action name="action_datasamp">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/tree/images/tree/hisdata.ico</normaloff>:/tree/images/tree/hisdata.ico</iconset>
+   </property>
+   <property name="text">
+    <string>添加数据采集</string>
+   </property>
+   <property name="toolTip">
+    <string>添加数据采集</string>
+   </property>
+  </action>
+  <action name="action_waring">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/btn/images/alarm.ico</normaloff>:/btn/images/alarm.ico</iconset>
+   </property>
+   <property name="text">
+    <string>添加报警</string>
+   </property>
+   <property name="toolTip">
+    <string>添加报警</string>
+   </property>
+  </action>
+  <action name="action_rep">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/tree/images/tree/recipe.ico</normaloff>:/tree/images/tree/recipe.ico</iconset>
+   </property>
+   <property name="text">
+    <string>添加配方</string>
+   </property>
+   <property name="toolTip">
+    <string>添加配方</string>
+   </property>
+  </action>
+  <action name="action_script">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/tree/images/tree/script.ico</normaloff>:/tree/images/tree/script.ico</iconset>
+   </property>
+   <property name="text">
+    <string>打开脚本浏览器</string>
+   </property>
+   <property name="toolTip">
+    <string>打开脚本浏览器</string>
+   </property>
+  </action>
+  <action name="action_ZXu">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/drawtool/images/drawtool/linelink.ico</normaloff>:/drawtool/images/drawtool/linelink.ico</iconset>
+   </property>
+   <property name="text">
+    <string>层次</string>
+   </property>
+   <property name="toolTip">
+    <string>层次</string>
+   </property>
+  </action>
+  <action name="action_Align">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/standardtool/images/standardtool/leftalign.ico</normaloff>:/standardtool/images/standardtool/leftalign.ico</iconset>
+   </property>
+   <property name="text">
+    <string>对齐</string>
+   </property>
+   <property name="toolTip">
+    <string>对齐</string>
+   </property>
+  </action>
+  <action name="action_space">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/standardtool/images/standardtool/makesamewihi.ico</normaloff>:/standardtool/images/standardtool/makesamewihi.ico</iconset>
+   </property>
+   <property name="text">
+    <string>间距</string>
+   </property>
+   <property name="toolTip">
+    <string>间距</string>
+   </property>
+  </action>
+  <action name="dataplay">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/btn/images/datadisplay.ico</normaloff>:/btn/images/datadisplay.ico</iconset>
+   </property>
+   <property name="text">
+    <string>数据显示</string>
+   </property>
+  </action>
+  <action name="graphicsitem">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/thing/images/thing/meter.ico</normaloff>:/thing/images/thing/meter.ico</iconset>
+   </property>
+   <property name="text">
+    <string>图表控件</string>
+   </property>
+  </action>
+  <action name="pictruedisplay">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/thing/images/thing/staticpicture.ico</normaloff>:/thing/images/thing/staticpicture.ico</iconset>
+   </property>
+   <property name="text">
+    <string>图片显示器</string>
+   </property>
+  </action>
+  <action name="action_MFbtn">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/standardtool/images/mfbtn..ico</normaloff>:/standardtool/images/mfbtn..ico</iconset>
+   </property>
+   <property name="text">
+    <string>多功能按钮</string>
+   </property>
+  </action>
+  <action name="action_messageboard">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/standardtool/images/msmboard.ico</normaloff>:/standardtool/images/msmboard.ico</iconset>
+   </property>
+   <property name="text">
+    <string>留言板</string>
+   </property>
+   <property name="toolTip">
+    <string>留言板</string>
+   </property>
+  </action>
+  <action name="actionCompress">
+   <property name="text">
+    <string>压缩/解压</string>
+   </property>
+  </action>
+  <action name="action_upload">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/debug/images/debug/upload.ico</normaloff>:/debug/images/debug/upload.ico</iconset>
+   </property>
+   <property name="text">
+    <string>上载数据</string>
+   </property>
+  </action>
+  <action name="action_HMI">
+   <property name="text">
+    <string>查看HMI信息</string>
+   </property>
+  </action>
+  <action name="action_tool">
+   <property name="text">
+    <string>组态工具箱</string>
+   </property>
+  </action>
+  <action name="action_X_Y">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/thing/images/thing/histrenddisplay.ico</normaloff>:/thing/images/thing/histrenddisplay.ico</iconset>
+   </property>
+   <property name="text">
+    <string>X-Y曲线</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="resourse.qrc"/>
+ </resources>
+ <connections/>
+</ui>

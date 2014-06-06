@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<project name="sdmacro" default="help">
+<!-- version 1.2 -->
+<!--
+1.mldexjar use JAVA_HOME to sett java_exe
+2.Add jml and jrl java file check
+3.Add Language select
+-->
+	<!-- 装载target属性 -->
+	<loadproperties srcFile="project.properties" />
+	
+	<!-- 配置SDK的目录，禁止修改 -->
+	<property name="sdk.dir" value="${basedir}/adk" />
+	
+    <!-- 编译选项配置 -->
+    <property name="java.encoding" value="GBK" />
+    <property name="java.target" value="1.6" />
+    <property name="java.source" value="1.6" />
+    <property name="java.compilerargs" value="" />
+
+    <!-- 打开所有工程输出，建议在调试阶段打开 -->
+    <property name="verbose" value="false" />
+
+    <!-- 装载Android特有的ant任务依赖库 禁止更改 -->
+    <path id="android.antlibs">
+        <pathelement path="${sdk.dir}/tools/lib/anttasks.jar" />
+    </path>
+
+    <!-- 定制Android特有的任务，禁止更改 -->
+    <taskdef name="setup"
+            classname="com.android.ant.NewSetupTask"
+            classpathref="android.antlibs" />
+
+    <taskdef name="dex"
+            classname="com.android.ant.DexExecTask"
+            classpathref="android.antlibs" />
+
+    <taskdef name="xpath"
+            classname="com.android.ant.XPathTask"
+            classpathref="android.antlibs" />
+
+    <taskdef name="if"
+            classname="com.android.ant.IfElseTask"
+            classpathref="android.antlibs" />
+
+    <!-- ***************************COMMON********************************* --> 
+    <!-- 配置顶级目录变量 -->
+	<property name="pro.root.dir" value="." />
+			
+    <!-- 配置JAVA源码输入目录 -->
+    <property name="java.source.dir" location="jsrc" />
+    
+    <!-- ***************************ML************************************* --> 
+    <!-- 配置ML主目录 -->
+	<property name="ml.dir"  location="ml" />
+	<!-- 配置ML的jar文件目录 -->
+	<property name="ml.jar.dir"  location="${ml.dir}" />
+	<!-- 配置ML的.jar文件 -->
+	<property name="ml.jar.file"  location="${ml.jar.dir}/ml.jar" />
+	<!-- 配置ML的class文件的目录 -->
+	<property name="ml.class.dir"  location="${ml.dir}/class" />
+	<!-- 配置ML的.jar文件的推送目录 -->
+	<property name="ml.push.dir"  value="/data/sdmacro" />
+	
+	<!-- ***************************JML************************************* -->
+	<!-- 配置JML包相对目录名 -->
+	<property name="jml.package.dir"  value="jml" />
+	<!-- 配置JML库的源文件名称，需要用户输入ml变量 -->
+	<property name="jml.src.file" value="${ml}.java" />
+	<!-- 配置JML库的class文件存放目录 -->
+	<property name="jml.class.dir"    location="${ml.class.dir}/${jml.package.dir}" />		
+	<!-- 配置.class文件路径 -->
+	<property name="jml.class.file" value="${jml.class.dir}/${ml}.class" />
+	<!-- ***************************JRL************************************* -->	    
+    <!-- 配置JRL包相对目录名 -->
+	<property name="jrl.package.dir"  value="jrl" />		
+	<!-- 配置JRL库文件的名称，需要用户输入ml变量 -->
+	<property name="jrl.src.file" value="${ml}.java" />			
+	<!-- 配置class文件存放目录 -->
+	<property name="jrl.class.dir"  location="${ml.class.dir}/${jrl.package.dir}" />		
+	<!-- 配置.class文件路径 -->
+	<property name="jrl.class.file" value="${jrl.class.dir}/${ml}.class" />
+	<!-- 配置工程依赖的jar包的存放目录为jrl的类存放目录-->
+    <!-- <property name="jar.libs.dir" location="${jrl.class.dir}" /> -->
+    <!-- ***************************公共依赖目录************************************* -->	    
+    <property name="jar.libs.dir" location="libs" /> 
+	<!-- ***************************END************************************* -->	    
+	
+		
+    <!-- 配置工具的后缀 -->
+	<condition property="exe" value=".exe" else=""><os family="windows" /></condition>
+    <condition property="bat" value=".bat" else=""><os family="windows" /></condition>
+	
+	<!-- 配置推送工具 -->
+    <property name="android.platform.tools.dir" location="${sdk.dir}/platform-tools" />
+    <property name="adb" location="${android.platform.tools.dir}/adb${exe}" />
+
+	<!-- 配置dx工具，即.jar生成工具-->
+	 <property name="dx" location="${android.platform.tools.dir}/dx${bat}" />
+
+    <!-- 配置是否打开全部构建输出，禁止删除-->
+    <condition property="verbosity" value="verbose" else="quiet">
+        <istrue value="${verbose}" />
+    </condition>
+   
+    <!-- 载入语言集 --> 
+    <import  file="string.xml" as="string" />
+	
+    <!-- **************************************************************** -->
+  
+  
+	<!-- 检查是否传入ml库 -->
+	<target name="-ml-check">
+		<condition property="has.ml">
+			<isset property="ml" />
+		</condition>
+		<fail message="${NOML} -Dml=${NOMLNAME}" unless="has.ml"/>
+	</target>
+	
+	<!-- 检查是否有jml的.java文件存在 -->
+    <target name="-detect-jmljfile" >  
+    <condition property="IsJMLJExist" >  
+    <and>  
+    <available file="${java.source.dir}/${jml.package.dir}/${jml.src.file}"/> 
+    </and>  
+    </condition>
+    <fail message="${NOJMLFILE} ${java.source.dir}\${jml.package.dir}\${jml.src.file}" unless="IsJMLJExist"/>
+    </target>
+	
+	<!-- 检查是否有jrl的.java文件存在 -->
+    <target name="-detect-jrljfile" >  
+    <condition property="IsJRLJExist" >  
+    <and>  
+    <available file="${java.source.dir}/${jrl.package.dir}/${jrl.src.file}"/> 
+    </and>  
+    </condition>
+    <fail message="${NOJRLFILE} ${java.source.dir}\${jrl.package.dir}\${jrl.src.file}" unless="IsJRLJExist"/>
+    </target>
+	
+	<property name="android.library.reference.1" value=""/>	
+	
+    <!-- 配置Android工程常规属性-->
+    <target name="-setup">
+        <if>
+            <condition>
+                <not><isset property="setup.done" /></not>
+            </condition>
+            <then>
+                <property name="setup.done" value="true" />
+                <echo message="${StrGathInfo}" />
+                <setup
+                        projectTypeOut="android.project.type"
+                        androidJarFileOut="android.jar"
+                        androidAidlFileOut="android.aidl"
+                        renderScriptExeOut="renderscript"
+                        renderScriptIncludeDirOut="android.rs"
+                        bootclasspathrefOut="android.target.classpath"
+                        projectLibrariesRootOut="project.libraries"
+                        projectLibrariesJarsOut="project.libraries.jars"
+                        projectLibrariesResOut="project.libraries.res"
+                        projectLibrariesPackageOut="project.libraries.package"
+                        projectLibrariesLibsOut="project.libraries.libs"
+                        targetApiOut="target.api"
+                />
+            </then>
+        </if>
+    </target>
+    
+	<!-- 配置构建设置-->
+    <target name="-build-setup" depends="-setup">
+
+	<!-- 配置当前工程需要依赖的.jar库-->
+        <path id="jar.libs.ref">
+            <fileset dir="${jar.libs.dir}" includes="*.jar" />
+            <path refid="project.libraries.jars" />
+        </path>
+        <mkdir dir="${jar.libs.dir}" />	
+    </target>
+    
+    <!-- **************************JML************************************** -->
+    <target name="jmlc" depends="string.string_set, -ml-check,-detect-jmljfile,-build-setup,jmlclean">        
+			<!-- 创建类存放目录 -->			
+			<mkdir dir="${jml.class.dir}" />					
+            <!-- 设置扩展路径 -->
+            <property name="extensible.classpath" value="." /> 
+            <!-- 设置依赖库路径 -->			 
+            <property name="extensible.libs.classpath" value="${jar.libs.dir}" />		
+			<echo message="${StrStartCompile}: ${ml}" />
+			<!-- 配置javac编译器 -->
+            <javac encoding="${java.encoding}"
+					sourcepath="" srcdir="${java.source.dir}"
+				    source="${java.source}" target="${java.target}"
+                    debug="true" extdirs="" includeantruntime="false"
+                    destdir="${ml.class.dir}"
+                    bootclasspathref="android.target.classpath"
+                    verbose="${verbose}"
+                    classpath="${extensible.classpath}"
+                    classpathref="jar.libs.ref"
+					>
+				<include name="${jml.package.dir}/${jml.src.file}" />
+                <classpath>
+                <fileset dir="${extensible.libs.classpath}" includes="*.jar" />
+                </classpath>
+                <compilerarg line="${java.compilerargs}" />
+            </javac>
+    </target>
+    
+    <!-- 清除JML构建生成的.class文件 -->
+    <target name="jmlclean" depends="-ml-check" >
+	  <delete file="${jml.class.file}" verbose="${verbose}" />		
+    </target>
+    
+    <!-- 清除JML构建生成的所有.class文件 -->
+    <target name="jmlcleanall" >
+	<delete dir="${jml.class.dir}" verbose="${verbose}" />		
+    </target>
+    
+    
+    <!-- **************************JRL************************************** -->
+    <target name="jrlc" depends="string.string_set,-detect-jrljfile,-ml-check,-build-setup">
+        
+			<!-- 创建类存放目录 -->
+			<mkdir dir="${jrl.class.dir}" />
+			
+			<!-- 设置扩展路径 -->
+            <property name="extensible.classpath" value="." />
+             
+            <!-- 设置依赖库路径 -->			 
+            <property name="extensible.libs.classpath" value="${jar.libs.dir}" />
+			
+			<echo message="${StrStartCompile}: ${ml}" />
+			<!-- 配置javac编译器 -->
+            <javac encoding="${java.encoding}"
+					sourcepath="" srcdir="${java.source.dir}"
+				    source="${java.source}" target="${java.target}"
+                    debug="true" extdirs="" includeantruntime="false"
+                    destdir="${ml.class.dir}"
+                    bootclasspathref="android.target.classpath"
+                    verbose="${verbose}"
+                    classpath="${extensible.classpath}"
+                    classpathref="jar.libs.ref"
+					>
+				<include name="${jrl.package.dir}/${jrl.src.file}" />
+                <classpath>
+                    <fileset dir="${extensible.libs.classpath}" includes="*.jar" />
+                </classpath>
+                <compilerarg line="${java.compilerargs}" />
+            </javac>
+    </target> 
+    
+    <!-- 清除JRL构建生成的.class文件 -->
+    <target name="jrlclean" depends="-ml-check">
+	<delete file="${jrl.class.file}" verbose="${verbose}" />		
+    </target>
+    
+ 	<!-- **************************ML************************************** -->   
+
+	<!-- 配置ml-dex-jar目标 -->
+	<macrodef name="ml-dex-jar">      
+        <attribute name="nolocals" default="true" />  
+		<sequential>
+			<!-- 配置dex操作的文件 -->
+            <dex executable="${dx}"
+                    output="${ml.jar.file}"
+                    nolocals="@{nolocals}"
+                    verbose="${verbose}" >
+                   <path path="${ml.class.dir}"/>
+            </dex>
+        </sequential>
+    </macrodef>
+	
+    <!-- 配置ML的dex格式的.jar打包器-->
+    <target name="mldexjar" depends="string.string_set" >    
+		<!-- 创建ML库的.jar存放目录 -->
+		<mkdir dir="${ml.dir}" />
+		<echo message="${StrCLASSDIR}: ${ml.class.dir}"/>
+		<echo message="${StrJARPATH}: ${ml.jar.file}"/>
+		<ml-dex-jar />     	
+    </target>
+    
+    <!-- 检查ML的jar文件是否存在 -->
+	<target name="-ml-jar-check">
+		<condition property="has.mljar">
+		<available file="${ml.jar.file}"/> 
+		</condition>
+		<fail message="${ml.jar.file} not found " unless="has.mljar"/>  
+	</target>
+    
+    <!-- 配置ML的jar推送器 -->
+	<target name="mlpush" depends="string.string_set,-ml-jar-check">		
+		<echo message="${JARPUSHFROM} ${ml.jar.file} ${JARPUSHTO} ${pushdir}" />
+		<exec executable="${adb}" failonerror="true">
+                                <arg value="push" />
+								<arg value="${ml.jar.file}" />
+                                <arg value="${pushdir}" />
+        </exec>
+	</target>
+    
+    
+	<!-- **************************************************************** -->
+    <!-- 配置帮助信息 -->
+    <target name="help">
+		<echo>Usage: ant [target] -Dml=[Name] </echo>
+        <echo>   help       Displays this help.</echo>        
+		<echo>   </echo>
+		<echo>   jmlc </echo>
+		<echo>   Compile JML, generate .class file in ${jml.class.dir} </echo>	
+		<echo>   eg: ant jmlc -Dml=aLibName </echo>
+		<echo>   </echo>
+		<echo>   jmlclean </echo>
+		<echo>   Clean .class file in ${jml.class.dir} </echo>	
+		<echo>   eg: ant jmlclean -Dml=aLibName </echo>
+		<echo>   </echo>
+		<echo>   jmlcleanall </echo>
+		<echo>   Clean all .class fies in ${jml.class.dir} </echo>	
+		<echo>   jrlc </echo>
+		<echo>   Compile JRL, generate .class file in ${jrl.class.dir} </echo>	
+		<echo>   eg: ant jrlc -Dml=aLibName </echo>
+		<echo>   </echo>
+		<echo>   jrlclean </echo>
+		<echo>   Clean .class file in ${jrl.class.dir} </echo>	
+		<echo>   eg: ant jrlclean -Dml=aLibName </echo>
+		<echo>   </echo>
+		<echo>   mldexjar </echo>
+		<echo>   Package .class files in ${jrl.class.dir} and ${jml.class.dir} to ml.jar file </echo>	
+		<echo>   eg: ant mldexjar </echo>
+		<echo>   </echo>	
+		<echo>   mlpush </echo>
+		<echo>   Push ml.jar to pushdir on device </echo>	
+		<echo>   eg: ant mlpush -Dpushdir=/data/data/com.android.Samkoonhmi/macro</echo>
+		<echo>   </echo>			
+		
+    </target>
+    
+	
+</project>

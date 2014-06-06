@@ -1,0 +1,238 @@
+	//--------------------------V1.4.9---------------------------------
+	protected CmnHolder LocalCmnCom1 = null;
+	protected CmnHolder LocalCmnCom2 = null;
+	protected CmnHolder LocalCmnNet0 = null;
+
+	protected boolean extFun(HashMap<String, PHolder> params){
+
+		if(null == params){
+			System.out.println("extFun: Warning params is null!");
+			return false;
+		}
+
+		if(params.containsKey("CmnCom1")){
+			LocalCmnCom1 = (CmnHolder ) params.get("CmnCom1");
+		}else{
+			System.out.println("extFun: CmnCom1 attach failed!");
+		}
+
+		if(params.containsKey("CmnCom2")){
+			LocalCmnCom2 = (CmnHolder ) params.get("CmnCom2");
+		}else{
+			System.out.println("extFun: CmnCom2 attach failed!");
+		}
+
+		if(params.containsKey("CmnNet0")){
+			LocalCmnNet0 = (CmnHolder ) params.get("CmnNet0");
+		}else{
+			System.out.println("extFun: CmnNet0 attach failed!");
+		}
+
+		return true;
+	}
+	private void PUTBYTES(int port, byte[] data,int len){
+		if(null == data){
+			System.out.println("PUTBYTES: data is null");
+			return;
+		}
+		if(len < 1 || len > data.length){
+			System.out.println("PUTBYTES: invalid length : " + len);
+			return ;
+		}
+		byte tmpData[] = new byte[len];
+		System.arraycopy(data, 0, tmpData, 0, len);
+		switch(port){
+		case 1:
+			if(null == LocalCmnCom1){
+				System.out.println("PUTBYTES: LocalCmnCom1 is null");
+				return;
+			}
+			this.LocalCmnCom1.set(tmpData);
+			this.LocalCmnCom1.sett(1);
+			break;
+		case 2:
+			if(null == LocalCmnCom2){
+				System.out.println("PUTBYTES: LocalCmnCom2 is null");
+				return;
+			}
+			this.LocalCmnCom2.set(tmpData);
+			this.LocalCmnCom2.sett(1);
+			break;
+		case 3:
+			if(null == LocalCmnNet0){
+				System.out.println("PUTBYTES: LocalCmnNet0 is null");
+				return;
+			}
+			this.LocalCmnNet0.set(tmpData);
+			this.LocalCmnNet0.sett(1);
+			break;
+		}
+
+	}
+
+	private int GETBYTES(int port, byte[] data){
+		if(null == data){
+			System.out.println("GETBYTES: data is null");
+			return -1;
+		}
+		int ret = -1;
+		byte[] tmpData = null;
+		switch(port){
+		case 1:
+			if(null == LocalCmnCom1){
+				System.out.println("GETBYTES: LocalCmnCom1 is null");
+				return -1;
+			}
+			ret = LocalCmnCom1.get(data);
+			break;
+		case 2:
+			if(null == LocalCmnCom2){
+				System.out.println("GETBYTES: LocalCmnCom2 is null");
+				return -1;
+			}
+			ret = LocalCmnCom2.get(data);
+			break;
+		case 3:
+			if(null == LocalCmnNet0){
+				System.out.println("GETBYTES: LocalCmnNet0 is null");
+				return -1;
+			}
+			ret = LocalCmnNet0.get(data);
+			break;
+		default:
+			ret = -1;
+			break;
+		}
+		return  ret;
+	}
+
+	private void CLEARBUFFER(int port){
+		switch(port){
+		case 1:
+			if(null == LocalCmnCom1){
+				System.out.println("CLEARBUFFER: LocalCmnCom1 is null");
+				return;
+			}
+			LocalCmnCom1.wclear();
+			LocalCmnCom1.rclear();
+			LocalCmnCom1.setPortClear();
+			break;
+		case 2:
+			if(null == LocalCmnCom2){
+				System.out.println("CLEARBUFFER: LocalCmnCom2 is null");
+				return;
+			}
+			LocalCmnCom2.wclear();
+			LocalCmnCom2.rclear();
+			LocalCmnCom2.setPortClear();
+			break;
+		case 3:
+			if(null == LocalCmnNet0){
+				System.out.println("CLEARBUFFER: LocalCmnNet0 is null");
+				return;
+			}
+			LocalCmnNet0.wclear();
+			LocalCmnNet0.rclear();
+			LocalCmnNet0.setPortClear();
+			break;
+		default:
+			return;
+		}
+	}
+	
+	public int GETBUFFERLENGTH(int port){
+		int ret = -1;
+		switch(port){
+		case 1:
+			if(null == LocalCmnCom1){
+				System.out.println("GETBUFFERLENGTH: LocalCmnCom1 is null");
+				return ret;
+			}
+			ret = LocalCmnCom1.getrvRefLength();
+			break;
+		case 2:
+			if(null == LocalCmnCom2){
+				System.out.println("GETBUFFERLENGTH: LocalCmnCom2 is null");
+				return ret;
+			}
+			ret = LocalCmnCom2.getrvRefLength();
+			break;
+		case 3:
+			if(null == LocalCmnNet0){
+				System.out.println("GETBUFFERLENGTH: LocalCmnNet0 is null");
+				return ret;
+			}
+			ret = LocalCmnNet0.getrvRefLength();
+			break;
+		default:
+			break;
+		}
+		return ret;
+	}
+	
+	public int WRITEANDREADCOMM(byte Port,
+						byte bArray[],
+						int nDelayTime,
+						int bInputFlag,
+						int nReadLength,
+						byte bStopChar){
+		int ret=-1;
+		switch(Port){
+		case 1:
+			if(null == LocalCmnCom1){
+				System.out.println("WRITEANDREADCOMM: LocalCmnCom1 is null");
+				return ret;
+			}
+			ret=LocalCmnCom1.WriteAndReadComm(bArray,nDelayTime,bInputFlag,nReadLength,bStopChar);
+			break;
+		case 2:
+			if(null == LocalCmnCom2){
+				System.out.println("WRITEANDREADCOMM: LocalCmnCom2 is null");
+				return ret;
+			}
+			ret=LocalCmnCom2.WriteAndReadComm(bArray,nDelayTime,bInputFlag,nReadLength,bStopChar);
+			break;
+		case 3:
+			if(null == LocalCmnNet0){
+				System.out.println("WRITEANDREADCOMM: LocalCmnNet0 is null");
+				return ret;
+			}
+			ret=LocalCmnNet0.WriteAndReadComm(bArray,nDelayTime,bInputFlag,nReadLength,bStopChar);
+			break;
+		default:
+			break;
+		}
+		return ret;
+	}
+	
+	private void printf(String format, Object...args){
+		System.out.printf(format, args);
+	}
+	
+	private void DELAY(long time){
+		try {
+			Thread.currentThread().sleep(time);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	private long getUInt(int p){
+		int nm = Integer.MIN_VALUE; 
+		int pm = Integer.MAX_VALUE;
+		BigInteger tx = new BigInteger(Integer.toString(p-nm));
+		BigInteger ty = new BigInteger(Integer.toString(pm));
+		BigInteger tz = new BigInteger(Integer.toString(1));
+		return tx.add(ty).add(tz).longValue();
+	}
+
+	private int getUShort(short p){
+		short nm = Short.MIN_VALUE; 
+		short pm = Short.MAX_VALUE; 
+		BigInteger tx = new BigInteger(Short.toString((short)(p-nm)));
+		BigInteger ty = new BigInteger(Short.toString(pm));
+		BigInteger tz = new BigInteger(Short.toString((short)1));
+		return tx.add(ty).add(tz).intValue();
+	}
+
+}//End of class

@@ -1,0 +1,6 @@
+     [echo] 收集编译信息...
+     [echo] 开始编译文件: dh
+    [javac] D:\android\install_sourceDisk\sdmacro\jsrc\jml\dh.java:5: 错误: 程序包jrl不存在
+    [javac] import jrl.*;public class dh
+    [javac] ^
+    [javac] 1 个错误

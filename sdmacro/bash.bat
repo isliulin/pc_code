@@ -1,0 +1,1 @@
+ant -quiet -f "D:\android\install_sourceDisk\sdmacro\build.xml" jmlc -Dml=dh -Dulan=CN> "D:\android\install_sourceDisk\sdmacro\log.txt"

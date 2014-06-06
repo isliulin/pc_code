@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>OpenLibrary</class>
+ <widget class="QDialog" name="OpenLibrary">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>784</width>
+    <height>632</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QTreeWidget" name="treeWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>151</width>
+     <height>511</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>图库</string>
+    </property>
+   </column>
+   <item>
+    <property name="text">
+     <string>按钮</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>标志一</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>标志二</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>标志三</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>罐体</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>开关一</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>开关二</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>标签一</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>标签二</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>状态</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>楼宇一</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>楼宇二</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>楼宇三</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>楼宇四</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>方向按钮一</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>方向按钮二</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>方向蓝色</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>方向绿色</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>方向红色</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>方向黄色</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>方向橙色</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>方向灰色</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>标志状态蓝色</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>标志状态白色</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>标志状态灰色</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>深蓝色一</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>深蓝色二</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>蓝色一</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>蓝色二</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>深红色一</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>深红色二</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>红色一</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>红色二</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>深绿色一</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>深绿色二</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>绿色一</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>绿色二</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>深黄色一</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>深黄色二</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>黄色一</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>黄色二</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>深橙色一</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>深橙色二</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>橙色一</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>橙色二</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>灰色一</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>灰色二</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>白色一</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>白色二</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>管道一</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>电脑</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>电机</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>电脑外设</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>管道二</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>管道蓝色</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>管道绿色</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>管道红色</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>管道黄色</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>管道橙色</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>管道灰色</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>仪表</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>元器件</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>搅拌器</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>杂项一</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>杂项二</string>
+     </property>
+    </item>
+   </item>
+  </widget>
+  <widget class="QGraphicsView" name="MainView">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>0</y>
+     <width>621</width>
+     <height>631</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="m_OkBtn">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>520</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>确定</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="m_Cancel">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>560</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>取消</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="HelpButton">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>600</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>帮助</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

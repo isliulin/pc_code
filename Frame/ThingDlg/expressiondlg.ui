@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ExpressionDlg</class>
+ <widget class="QDialog" name="ExpressionDlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>294</width>
+    <height>193</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>表达式</string>
+  </property>
+  <widget class="QPushButton" name="btn_ok">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>160</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>确定</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_cancel">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>160</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>取消</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="combo_Type">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>65</y>
+     <width>50</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>50</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <item>
+    <property name="text">
+     <string>地址</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>常数</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="combo_Type_2">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>95</y>
+     <width>50</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>50</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <item>
+    <property name="text">
+     <string>地址</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>常数</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="combo_Type_3">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>125</y>
+     <width>50</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>50</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <item>
+    <property name="text">
+     <string>地址</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>常数</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>24</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>运算</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>10</y>
+     <width>54</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>变量/常数</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_addr">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>33</y>
+     <width>28</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../../resourse.qrc">
+     <normaloff>:/addressintput/images/address.bmp</normaloff>:/addressintput/images/address.bmp</iconset>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+   <property name="autoDefault">
+    <bool>true</bool>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>102</x>
+     <y>35</y>
+     <width>161</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>170</width>
+     <height>16777215</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_addr2">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>63</y>
+     <width>28</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../../resourse.qrc">
+     <normaloff>:/addressintput/images/address.bmp</normaloff>:/addressintput/images/address.bmp</iconset>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+   <property name="autoDefault">
+    <bool>true</bool>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>65</y>
+     <width>39</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>50</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <item>
+    <property name="text">
+     <string>无</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>+</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>*</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>/</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>^</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>%</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>&amp;</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>|</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>&lt;&lt;</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>&gt;&gt;</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_2">
+   <property name="geometry">
+    <rect>
+     <x>102</x>
+     <y>65</y>
+     <width>161</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>170</width>
+     <height>16777215</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_addr3">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>93</y>
+     <width>28</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../../resourse.qrc">
+     <normaloff>:/addressintput/images/address.bmp</normaloff>:/addressintput/images/address.bmp</iconset>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+   <property name="autoDefault">
+    <bool>true</bool>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>95</y>
+     <width>39</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>50</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <item>
+    <property name="text">
+     <string>无</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>+</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>*</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>/</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>^</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>%</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>&amp;</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>|</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>&lt;&lt;</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>&gt;&gt;</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_3">
+   <property name="geometry">
+    <rect>
+     <x>102</x>
+     <y>95</y>
+     <width>161</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>170</width>
+     <height>16777215</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_addr4">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>123</y>
+     <width>28</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../../resourse.qrc">
+     <normaloff>:/addressintput/images/address.bmp</normaloff>:/addressintput/images/address.bmp</iconset>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+   <property name="autoDefault">
+    <bool>true</bool>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>125</y>
+     <width>39</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>50</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <item>
+    <property name="text">
+     <string>无</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>+</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>*</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>/</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>^</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>%</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>&amp;</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>|</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>&lt;&lt;</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>&gt;&gt;</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_4">
+   <property name="geometry">
+    <rect>
+     <x>102</x>
+     <y>125</y>
+     <width>161</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>170</width>
+     <height>16777215</height>
+    </size>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../../resourse.qrc"/>
+ </resources>
+ <connections/>
+</ui>

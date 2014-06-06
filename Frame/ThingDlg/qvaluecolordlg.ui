@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QValueColorDlg</class>
+ <widget class="QWidget" name="QValueColorDlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>534</width>
+    <height>271</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox_4">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>241</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>外形属性</string>
+   </property>
+   <widget class="QPushButton" name="m_deletepicbtn">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>60</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>删除图片</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="m_SelectLibpushBtn">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>选择图库</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="m_SelectPicpushBtn">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>100</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>选择外部图片</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>160</y>
+     <width>241</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>限值</string>
+   </property>
+   <widget class="QLineEdit" name="m_nHightNumberspBox">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>56</y>
+      <width>141</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="m_nHightNumberlabel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>58</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>高限值：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="m_nLowerNumberlabel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>22</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>低限值：</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="m_nLowerNumberspBox">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>20</y>
+      <width>141</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>10</y>
+     <width>251</width>
+     <height>241</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>颜色设置</string>
+   </property>
+   <widget class="QSpinBox" name="m_TransparentspBox">
+    <property name="geometry">
+     <rect>
+      <x>92</x>
+      <y>22</y>
+      <width>141</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>255</number>
+    </property>
+    <property name="value">
+     <number>255</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="m_Transparentlabel">
+    <property name="geometry">
+     <rect>
+      <x>12</x>
+      <y>24</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>透明度：</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="m_HightColorBtn">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>188</y>
+      <width>141</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="m_LowColorlabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>151</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>低位背景色：</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="m_LowColorBtn">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>147</y>
+      <width>141</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="m_HightColorlabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>190</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>高位背景色：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="m_DataColorlabel">
+    <property name="geometry">
+     <rect>
+      <x>12</x>
+      <y>64</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>数值颜色：</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="m_DataColorBtn">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>62</y>
+      <width>141</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="m_DataBackColorBtn">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>104</y>
+      <width>141</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="m_DataBackColorlabel">
+    <property name="geometry">
+     <rect>
+      <x>12</x>
+      <y>106</y>
+      <width>71</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>数值背景色：</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

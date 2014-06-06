@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SaveUserDefineLib</class>
+ <widget class="QDialog" name="SaveUserDefineLib">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>737</width>
+    <height>524</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QTreeWidget" name="treeWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>161</width>
+     <height>371</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>自定义</string>
+    </property>
+   </column>
+   <item>
+    <property name="text">
+     <string>自定义图库</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>图库一</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>图库二</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>图库三</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>图库四</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>图库五</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>图库六</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>图库七</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>图库八</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>图库九</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>图库十</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>图库十一</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>图库十二</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>图库十三</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>图库十四</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>图库十五</string>
+     </property>
+    </item>
+   </item>
+  </widget>
+  <widget class="QGraphicsView" name="MainView">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>10</y>
+     <width>551</width>
+     <height>501</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="m_DeleteItem">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>400</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>删除选择对象</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="m_SaveItem">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>440</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>保存</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="m_Cancel">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>480</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>关闭</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,882 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QAlarmControlGenDlg</class>
+ <widget class="QWidget" name="QAlarmControlGenDlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>584</width>
+    <height>447</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox_4">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>10</y>
+     <width>271</width>
+     <height>341</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>标题列</string>
+   </property>
+   <widget class="QLabel" name="label_16">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>110</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>背 景 色：</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="m_tbackcolorbtn">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>110</y>
+      <width>141</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_17">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>50</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>字体大小：</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="m_tfontsizecmb">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>50</y>
+      <width>141</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_18">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>80</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>字    体：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_19">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>140</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>文字颜色：</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="m_ttextcolorbtn">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>140</y>
+      <width>141</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="m_timeedit">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>170</y>
+      <width>141</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="m_dateedit">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>200</y>
+      <width>141</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_20">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>230</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>消    息：</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="m_msgedit">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>230</y>
+      <width>141</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>24</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>语    言：</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="m_languagecmb">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>20</y>
+      <width>141</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="m_tfontcmb">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>80</y>
+      <width>141</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="m_timelable">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>173</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>时    间：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="m_datalable">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>203</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>日    期：</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="m_cleardate">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>280</y>
+      <width>141</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="m_cleartime">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>310</y>
+      <width>141</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="m_cleardatelable">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>281</y>
+      <width>71</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>日期：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="m_cleartimelable">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>310</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>时间：</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="IFNO">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>257</y>
+      <width>61</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>编号</string>
+    </property>
+   </widget>
+   <zorder>label_16</zorder>
+   <zorder>m_tbackcolorbtn</zorder>
+   <zorder>label_17</zorder>
+   <zorder>m_tfontsizecmb</zorder>
+   <zorder>label_18</zorder>
+   <zorder>label_19</zorder>
+   <zorder>m_ttextcolorbtn</zorder>
+   <zorder>m_timeedit</zorder>
+   <zorder>m_dateedit</zorder>
+   <zorder>label_20</zorder>
+   <zorder>m_msgedit</zorder>
+   <zorder>label_3</zorder>
+   <zorder>m_languagecmb</zorder>
+   <zorder>m_tfontcmb</zorder>
+   <zorder>m_timelable</zorder>
+   <zorder>m_datalable</zorder>
+   <zorder>m_cleardate</zorder>
+   <zorder>m_cleartime</zorder>
+   <zorder>m_cleardatelable</zorder>
+   <zorder>m_cleartimelable</zorder>
+   <zorder>IFNO</zorder>
+   <zorder>groupBox_2</zorder>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>261</width>
+     <height>341</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>文本</string>
+   </property>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>字体大小：</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="m_fontsizecmb">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>20</y>
+      <width>121</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>50</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>文 本 色：</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="m_fontcolorbtn">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>50</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>80</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>行    数：</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="m_rowspin">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>80</y>
+      <width>121</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>20</number>
+    </property>
+    <property name="value">
+     <number>5</number>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="m_timecheck">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>110</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>时间显示</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="m_datecheck">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>140</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>日期显示</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="m_timecmb">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>110</y>
+      <width>121</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>HH:MM</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>HH:MM:SS</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>HH-MM</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>HH-MM-SS</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>270</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>消除报警：</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Clear_Alarm_Color">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>270</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>300</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>确认报警：</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Receive_Note_Color">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>300</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="If_Clean_Alarm_Data">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>170</y>
+      <width>211</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>消除警报日期</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="If_Clean_Alarm_Time">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>218</y>
+      <width>161</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>消除警报时间</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="m_cleartimecmb">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>240</y>
+      <width>161</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>HH:MM</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>HH:MM:SS</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="m_cleardatecmb">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>191</y>
+      <width>161</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>YYYY/MM/DD</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>YYYY.MM.DD</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>YYYY-MM-DD</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MM/DD/YYYY</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MM.DD.YYYY</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MM-DD-YYYY</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>DD/MM/YYYY</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>DD.MM.YYYY</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>DD-MM-YYYY</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="m_datacmb">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>140</y>
+      <width>121</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>YYYY/MM/DD</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>YYYY.MM.DD</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>YYYY-MM-DD</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MM/DD/YYYY</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MM.DD.YYYY</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MM-DD-YYYY</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>DD/MM/YYYY</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>DD.MM.YYYY</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>DD-MM-YYYY</string>
+     </property>
+    </item>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>360</y>
+     <width>271</width>
+     <height>84</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>框</string>
+   </property>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>背景色：</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="m_fbackcolorbtn">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>20</y>
+      <width>141</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>50</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>边框色：</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="m_fframcolorbtn">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>50</y>
+      <width>141</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>label_2</zorder>
+   <zorder>m_fbackcolorbtn</zorder>
+   <zorder>label_8</zorder>
+   <zorder>m_fframcolorbtn</zorder>
+   <zorder>groupBox_3</zorder>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>360</y>
+     <width>261</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QCheckBox" name="If_Use_Control_Add">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>15</y>
+      <width>211</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>是否使用控制地址</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>17</x>
+      <y>52</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>控制地址：</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Control_Add_Keyboard">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>52</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="toolTip">
+     <string>注意：该地址只能为内部地址</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="../../resourse.qrc">
+      <normaloff>:/addressintput/images/address.bmp</normaloff>:/addressintput/images/address.bmp</iconset>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="Control_Add">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>52</y>
+      <width>131</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>注意：该地址只能为内部地址</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_groupset">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>30</y>
+      <width>261</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <underline>true</underline>
+     </font>
+    </property>
+    <property name="text">
+     <string>选择报警组</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>m_languagecmb</tabstop>
+  <tabstop>m_tfontsizecmb</tabstop>
+  <tabstop>m_tfontcmb</tabstop>
+  <tabstop>m_timeedit</tabstop>
+  <tabstop>m_dateedit</tabstop>
+  <tabstop>m_msgedit</tabstop>
+  <tabstop>m_cleardate</tabstop>
+  <tabstop>m_cleartime</tabstop>
+  <tabstop>Control_Add</tabstop>
+  <tabstop>m_fontsizecmb</tabstop>
+  <tabstop>m_fontcolorbtn</tabstop>
+  <tabstop>m_rowspin</tabstop>
+  <tabstop>m_timecmb</tabstop>
+  <tabstop>m_cleardatecmb</tabstop>
+  <tabstop>m_cleartimecmb</tabstop>
+ </tabstops>
+ <resources>
+  <include location="../../resourse.qrc"/>
+ </resources>
+ <connections/>
+</ui>

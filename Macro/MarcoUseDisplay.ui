@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MarcoUseDisplay</class>
+ <widget class="QDialog" name="MarcoUseDisplay">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>711</width>
+    <height>357</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>宏指令使用一览表</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>300</y>
+     <width>701</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>显示类别</string>
+   </property>
+   <widget class="QRadioButton" name="m_radio1">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>20</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>显示全部画面</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="m_radio2">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>19</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>显示指定画面</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="m_sheetcmb">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>20</y>
+      <width>211</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QTableWidget" name="m_table">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>0</y>
+     <width>701</width>
+     <height>291</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

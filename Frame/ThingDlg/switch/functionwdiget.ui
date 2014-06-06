@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FunctionWdiget</class>
+ <widget class="QWidget" name="FunctionWdiget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>590</width>
+    <height>151</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>571</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>功能设定</string>
+   </property>
+   <widget class="QComboBox" name="combo_Funciton">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>20</y>
+      <width>251</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>背景灯开关</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>系统重启</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>设置屏保时间</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>设置系统时间</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>切换当前用户</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>用户管理</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>触摸声音开关</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>启动浏览器</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>语言切换</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>屏幕截图</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>窗口操作</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>清除历史数据</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>配方操作</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>报警操作</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>修改当前用户密码</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>注销当前用户</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>启动网络服务</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>曲线放大</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>曲线缩小</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>WIFI设置</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>发邮件</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>启动远程服务</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>关闭远程服务</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>以太网设置</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>打印机设置</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>系统设置</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>返回系统桌面</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>25</y>
+      <width>54</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>选择功能：</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="combo_Type">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>50</y>
+      <width>251</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>55</y>
+      <width>54</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>选择类型：</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="combo_screen">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>49</y>
+      <width>131</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>50</y>
+      <width>51</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>画面：</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_X">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>23</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>X轴</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_Y">
+    <property name="geometry">
+     <rect>
+      <x>448</x>
+      <y>23</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Y轴</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>551</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(60, 63, 255);
+font: 10pt &quot;宋体&quot;;</string>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

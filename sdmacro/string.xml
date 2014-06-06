@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+<property name="ulan" value="CN" />
+<target name="string_set">
+    <condition property="StrGathInfo" value="Gathering info for build ..." else="收集编译信息..." >
+        <matches string="${ulan}" pattern="EN" />
+    </condition>
+    
+    <condition property="StrStartCompile" value="Start Compile" else="开始编译文件" >
+        <matches string="${ulan}" pattern="EN" />
+	</condition>
+		
+	<condition property="StrCLASSDIR" value="Class Folder " else="类目录名称为" >
+        <matches string="${ulan}" pattern="EN" />
+	</condition>
+		
+	<condition property="StrJARPATH"  value="JAR File PATH" else="生成文件名称" >
+        <matches string="${ulan}" pattern="EN" />
+    </condition>
+    
+    <condition property="JARPUSHFROM"  value="Try Push" else="正推送" >
+        <matches string="${ulan}" pattern="EN" />
+	</condition>
+	
+	<condition property="JARPUSHTO"  value="To" else="到" >
+        <matches string="${ulan}" pattern="EN" />
+	</condition>
+		
+	<condition property="NOML"  value="The ml not set, add" else="没有指定库名称，请增加" >
+        <matches string="${ulan}" pattern="EN" />
+	</condition>
+	
+	<condition property="NOMLNAME"  value="ML Name" else="库名称" >
+        <matches string="${ulan}" pattern="EN" />
+	</condition>
+		
+	<condition property="NOJMLFILE"  value="Can not find" else="没有找到" >
+        <matches string="${ulan}" pattern="EN" />
+	</condition>
+	
+	<condition property="NOJRLFILE"  value="Can not find" else="没有找到" >
+        <matches string="${ulan}" pattern="EN" />
+	</condition>	
+</target>
+</project>

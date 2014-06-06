@@ -1,0 +1,5 @@
+     [echo] 类目录名称为: D:\android\install_sourceDisk\sdmacro\ml\class
+     [echo] 生成文件名称: D:\android\install_sourceDisk\sdmacro\ml\ml.jar
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
